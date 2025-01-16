@@ -1,0 +1,35 @@
+{
+  "extends": "@nx/workspace/presets/core.json",
+  "npmScope": "ustad",
+  "projects": {
+    "shared": {
+      "root": "shared",
+      "sourceRoot": "shared/src",
+      "projectType": "library"
+    },
+    "chatbot": {
+      "root": "apps/ustad-web-chatbot",
+      "sourceRoot": "apps/ustad-web-chatbot/src",
+      "projectType": "library"
+    }
+  },
+  "plugins": [
+    {
+      "plugin": "@nx/next/plugin",
+      "options": {
+        "startTargetName": "start",
+        "buildTargetName": "next:build",
+        "devTargetName": "dev",
+        "serveStaticTargetName": "serve-static"
+      }
+    }
+  ],
+  "generators": {
+    "@nx/next": {
+      "application": {
+        "style": "none",
+        "linter": "none"
+      }
+    }
+  }
+}

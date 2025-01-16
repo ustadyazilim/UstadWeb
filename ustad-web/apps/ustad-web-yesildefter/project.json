@@ -1,0 +1,42 @@
+{
+  "name": "ustad-web-yesildefter",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/ustad-web-yesildefter",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nx/next:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/apps/ustad-web-yesildefter"
+      },
+      "configurations": {
+        "development": {
+          "outputPath": "apps/ustad-web-yesildefter"
+        },
+        "production": {}
+      }
+    },
+    "serve": {
+      "executor": "@nx/next:server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "ustad-web-yesildefter:build",
+        "dev": true,
+        "port": 3002
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "ustad-web-yesildefter:build:development",
+          "dev": true
+        },
+        "production": {
+          "buildTarget": "ustad-web-yesildefter:build:production",
+          "dev": false
+        }
+      }
+    }
+  },
+  "tags": []
+}

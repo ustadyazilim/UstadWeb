@@ -1,0 +1,35 @@
+[
+    {
+        "button": "Kursiyer kayıtları",
+        "value": "/static/videoplayback.mp4",
+        "value2" : "123"
+    },
+    {
+        "button": "Dönem, grup, şube",
+        "value": "/videos/donem_grup_sube.mp4"
+    },
+    {
+        "button": "Teorik dersler",
+        "value": "/videos/teorik_dersler.mp4"
+    },
+    {
+        "button": "e-Sınav",
+        "value": "/videos/e_sinav.mp4"
+    },
+    {
+        "button": "Uygulamalı dersler",
+        "value": "/videos/uygulamali_dersler.mp4"
+    },
+    {
+        "button": "Uygulamalı sınav",
+        "value": "/videos/uygulamali_sinav.mp4"
+    },
+    {
+        "button": "Sertifika işlemleri",
+        "value": "/videos/sertifika_islemleri.mp4"
+    },
+    {
+        "button": "Muhasebe işlemleri",
+        "value": "/videos/muhasebe_islemleri.mp4"
+    }
+]
