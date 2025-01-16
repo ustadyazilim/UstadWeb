@@ -2,7 +2,6 @@
 
 import { useEffect, useRef } from 'react';
 import styles from '../../../styles/UstadDecorations.module.scss';
-import UstadGeometricShape from '../UstadGeometricShape/GeometricShape';
 
 interface UstadDecorationsProps {
   variant?: 'default' | 'cta';
@@ -30,12 +29,13 @@ const UstadDecorations = ({ variant = 'default' }: UstadDecorationsProps) => {
   return (
     <div className={styles['decorations']} ref={decorationsRef}>
       {[...Array(4)].map((_, index) => (
-        <UstadGeometricShape
+        <img
           key={index}
+          src={`/images/shapes/shape${index + 1}.svg`}
+          alt=""
           className={`${styles['decorations__shape']} ${
             styles[`decorations__shape--${index + 1}`]
           }`}
-          color={index === 0 ? '#497F18' : index === 1 ? '#FF9914' : '#231B3B'}
         />
       ))}
     </div>

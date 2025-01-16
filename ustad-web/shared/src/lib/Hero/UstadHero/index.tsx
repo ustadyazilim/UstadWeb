@@ -15,10 +15,10 @@ export interface UstadHeroProps {
 }
 
 const AVATAR_GROUPS = [
-  { id: 1, imageUrl: '/path/to/avatar1.jpg' },
-  { id: 2, imageUrl: '/path/to/avatar2.jpg' },
-  { id: 3, imageUrl: '/path/to/avatar3.jpg' },
-  { id: 4, imageUrl: '/path/to/avatar4.jpg' },
+  { id: 1, imageUrl: '/images/avatars/avatar1.jpeg' },
+  { id: 2, imageUrl: '/images/avatars/avatar2.jpeg' },
+  { id: 3, imageUrl: '/images/avatars/avatar3.jpeg' },
+  { id: 4, imageUrl: '/images/avatars/avatar4.jpeg' },
 ];
 
 const UstadHero = async ({ className, params }: UstadHeroProps) => {
@@ -67,8 +67,8 @@ const UstadHero = async ({ className, params }: UstadHeroProps) => {
           </div>
         </div>
         <Image
-          src="/path/to/hero-image.jpg"
-          alt="Big Shoes Avatar"
+          src="/images/illustrations/hero-illustration.svg"
+          alt="Hero Shape"
           width={505}
           height={390}
           className={styles['hero__image']}

@@ -20,7 +20,11 @@
     &:hover {
       transform: translateY(-6px);
       box-shadow: tokens.$shadow-card-lg;
-      background: linear-gradient(135deg, tokens.$color-background-secondary 0%, tokens.$color-background-accent 100%);
+      background: linear-gradient(
+        135deg,
+        tokens.$color-background-secondary 0%,
+        tokens.$color-background-accent 100%
+      );
 
       .item__icon {
         background: tokens.$color-primary;

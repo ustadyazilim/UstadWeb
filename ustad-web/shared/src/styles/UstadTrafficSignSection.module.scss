@@ -25,23 +25,40 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    &--orange {
-      transform: rotate(-15deg);
-      .signs__image {
-        background: $color-primary-orange;
-      }
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      z-index: 0;
+      transition: transform 0.3s ease;
     }
-    &--red {
-      transform: rotate(10deg);
-      .signs__image {
-        background: $color-error;
-      }
+
+    .signs__image {
+      position: relative;
+      z-index: 1;
+      background: transparent;
     }
-    &--green {
-      transform: rotate(5deg);
-      .signs__image {
-        background: $color-primary-green;
-      }
+
+    &--orange::before {
+      background: rgba($color-primary-orange, 0.15);
+      transform: rotate(-15deg) scale(1.2);
+    }
+
+    &--red::before {
+      background: rgba($color-error, 0.15);
+      transform: rotate(10deg) scale(1.2);
+    }
+
+    &--green::before {
+      background: rgba($color-primary-green, 0.15);
+      transform: rotate(5deg) scale(1.2);
+    }
+
+    &:hover::before {
+      transform: scale(1.3);
     }
   }
   &__content {

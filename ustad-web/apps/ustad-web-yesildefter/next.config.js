@@ -23,6 +23,11 @@ const nextConfig = {
   async rewrites() {
     return [
       {
+        source: '/static/:path*',
+        destination: 'http://localhost:5001/static/:path*',
+        basePath: false,
+      },
+      {
         source: '/api/chat/:path*',
         destination: 'http://localhost:5001/:path*',
         basePath: false,
@@ -31,6 +36,14 @@ const nextConfig = {
   },
   async headers() {
     return [
+      {
+        source: '/static/:path*',
+        headers: [
+          { key: 'Access-Control-Allow-Origin', value: '*' },
+          { key: 'Access-Control-Allow-Methods', value: 'GET,OPTIONS' },
+          { key: 'Access-Control-Allow-Headers', value: 'Content-Type' },
+        ],
+      },
       {
         source: '/api/chat/:path*',
         headers: [

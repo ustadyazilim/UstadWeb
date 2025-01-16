@@ -29,15 +29,21 @@ const JOURNEY_FRAMES = [
   {
     id: 'frame160930',
     mainImage: {
-      src: 'https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/0fe07db2-95f1-4ff7-afa1-e4312119e0cb/5a7d2c8e-bd70-4e43-9525-94488c82e7d6',
+      src: '/images/illustrations/testimonialCard-illustration.svg',
       alt: 'Sürücü Kursu Ana Görsel',
     },
     subFrames: [
       {
         frameId: 'frame159490',
         images: [
-          { src: '/images/decorations/frame1.svg', alt: 'Dekoratif Görsel 1' },
-          { src: '/images/decorations/frame2.svg', alt: 'Dekoratif Görsel 2' },
+          {
+            src: '/images/illustrations/testimonialCard-illustration.svg',
+            alt: 'Dekoratif Görsel 1',
+          },
+          {
+            src: '/images/illustrations/testimonialCard-illustration.svg',
+            alt: 'Dekoratif Görsel 2',
+          },
         ],
       },
     ],
@@ -45,15 +51,21 @@ const JOURNEY_FRAMES = [
   {
     id: 'frame161027',
     mainImage: {
-      src: 'https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/0fe07db2-95f1-4ff7-afa1-e4312119e0cb/15735af4-35ce-48fb-a16a-3ecc58d02e6a',
+      src: '/images/illustrations/testimonialCard-illustration.svg',
       alt: 'Sürücü Kursu Detay',
     },
     subFrames: [
       {
         frameId: 'frame159491',
         images: [
-          { src: '/images/decorations/frame3.svg', alt: 'Dekoratif Görsel 3' },
-          { src: '/images/decorations/frame4.svg', alt: 'Dekoratif Görsel 4' },
+          {
+            src: '/images/illustrations/testimonialCard-illustration.svg',
+            alt: 'Dekoratif Görsel 3',
+          },
+          {
+            src: '/images/illustrations/testimonialCard-illustration.svg',
+            alt: 'Dekoratif Görsel 4',
+          },
         ],
       },
     ],

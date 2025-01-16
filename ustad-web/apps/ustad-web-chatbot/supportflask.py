@@ -44,5 +44,10 @@ def serve_video(filename):
     video_path = os.path.join("static", "videos")
     return send_from_directory(video_path, filename)
 
+@app.route('/static/<path:path>')
+def send_static(path):
+    return send_from_directory('static', path)
+
+
 if __name__ == "__main__":
     app.run(debug=True, port=5001)

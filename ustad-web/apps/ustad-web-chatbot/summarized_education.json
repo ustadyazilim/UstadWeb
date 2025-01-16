@@ -31,5 +31,18 @@
     {
         "button": "Muhasebe işlemleri",
         "value": "/videos/muhasebe_islemleri.mp4"
+    },
+    {
+        "button": "Amaç ve Kapsam",
+        "value": [
+            {
+                "button": "Amaç",
+                "value": "Bu yönetmeliğin amacı, özel motorlu taşıt sürücüleri kurslarının işleyişiyle ilgili usul ve esasları düzenlemektir."
+            },
+            {
+                "button": "Kapsam",
+                "value": "Yönetmelik, 8/2/2007 tarihli ve 5580 sayılı Özel Öğretim Kurumları Kanunu kapsamında açılan özel motorlu taşıt sürücüleri kurslarını kapsar."
+            }
+        ]
     }
 ]

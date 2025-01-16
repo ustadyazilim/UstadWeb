@@ -1,6 +1,5 @@
 export { default as UstadHeader } from './Header/UstadHeader';
 export { default as UstadFooter } from './Footer/UstadFooter';
-export { default as ChatBot } from './ChatBot';
 export { default as UstadButton } from './Button/UstadButton';
 export { default as UstadCTA } from './CTA/UstadCTA';
 export { default as UstadCard } from './Card/UstadCard';

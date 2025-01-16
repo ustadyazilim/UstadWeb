@@ -5,7 +5,6 @@ import { Suspense } from 'react';
 import { UstadHeader } from '../../Header';
 import { UstadFooter } from '../../Footer';
 import { UstadDecorations } from '../../Decoration';
-import { ChatBot } from '../../ChatBot/index';
 
 export interface UstadLayoutProps {
   children: React.ReactNode;
@@ -24,7 +23,6 @@ const UstadLayout = ({ children, params }: UstadLayoutProps) => {
       <main className={styles['layout__main']}>
         <UstadDecorations />
         {children}
-        <ChatBot />
       </main>
       <UstadFooter />
     </div>

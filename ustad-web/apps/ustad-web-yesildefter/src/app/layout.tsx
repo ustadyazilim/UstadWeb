@@ -1,3 +1,4 @@
+import ChatBotEmbed from './components/ChatBotEmbed';
 import './globals.scss';
 import { UstadLayout } from '@shared/index';
 
@@ -16,6 +17,7 @@ export default function RootLayout({
       <body>
         <UstadLayout params={{ lang: 'en-US', theme: 'light' }}>
           {children}
+          <ChatBotEmbed />
         </UstadLayout>
       </body>
     </html>
