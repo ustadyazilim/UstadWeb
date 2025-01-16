@@ -1,0 +1,42 @@
+{
+  "name": "ustad-web-shell",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/ustad-web-shell",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nx/next:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/apps/ustad-web-shell"
+      },
+      "configurations": {
+        "development": {
+          "outputPath": "apps/ustad-web-shell"
+        },
+        "production": {}
+      }
+    },
+    "serve": {
+      "executor": "@nx/next:server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "ustad-web-shell:build",
+        "dev": true,
+        "port": 3001
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "ustad-web-shell:build:development",
+          "dev": true
+        },
+        "production": {
+          "buildTarget": "ustad-web-shell:build:production",
+          "dev": false
+        }
+      }
+    }
+  },
+  "tags": []
+}

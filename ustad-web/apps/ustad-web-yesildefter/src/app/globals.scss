@@ -1,0 +1,21 @@
+@use './styles/UstadDesignTokens.scss' as *;
+@use './styles/UstadMediQueries.scss' as *;
+@use './styles/UstadUtilities.scss' as *;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Reset default styles
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: $font-family-base;
+}
+
+.ustad_button--global {
+  @apply bg-sky-400;
+}

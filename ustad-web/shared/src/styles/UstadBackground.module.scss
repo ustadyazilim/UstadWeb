@@ -1,0 +1,53 @@
+@use '@styles/UstadDesignTokens.scss' as tokens;
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  background: linear-gradient(
+    to bottom,
+    #d3dad6 0%,
+    // Light grayish green
+    #ebffe9 33.33%,
+    // Light mint green
+    #f7ebd9 66.67%,
+    // Light peach
+    #e4e4e7 100% // Light gray
+  );
+}
+
+// Add a subtle noise texture overlay
+.background::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/noise.png');
+  opacity: 0.03;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+}
+
+// Optional: Add animation for gradient
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+// Apply animation conditionally
+.background--animated {
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+}

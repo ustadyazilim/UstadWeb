@@ -1,0 +1,83 @@
+@import './UstadDesignTokens.scss';
+
+.section {
+  width: 100%;
+  max-width: $container-width;
+  padding: 180px $spacing-4xl;
+  margin: auto;
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: $spacing-4xl;
+  }
+  &__signs {
+    flex: 1;
+    position: relative;
+  }
+  .signs__group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: $spacing-xl;
+  }
+  .signs__item {
+    position: relative;
+    height: 232px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &--orange {
+      transform: rotate(-15deg);
+      .signs__image {
+        background: $color-primary-orange;
+      }
+    }
+    &--red {
+      transform: rotate(10deg);
+      .signs__image {
+        background: $color-error;
+      }
+    }
+    &--green {
+      transform: rotate(5deg);
+      .signs__image {
+        background: $color-primary-green;
+      }
+    }
+  }
+  &__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-lg;
+  }
+
+  &__title {
+    font-size: $font-size-4xl;
+    font-weight: $font-weight-bold;
+    color: $color-text-dark;
+  }
+
+  &__description {
+    font-size: $font-size-base;
+    color: $color-text-secondary;
+    max-width: 480px;
+  }
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .section {
+    &__container {
+      flex-direction: column;
+      gap: $spacing-2xl;
+    }
+
+    &__signs {
+      width: 100%;
+    }
+
+    &__content {
+      text-align: center;
+      align-items: center;
+    }
+  }
+}
