@@ -9,23 +9,15 @@ import {
 } from '@shared/index';
 
 export default async function Page() {
-  // Variables && Hooks
-
-  const lang = 'en-US';
-
   return (
     <>
-      <UstadHero params={{ lang }} />
-      <UstadTrafficSignSection params={{ lang }} />
+      <UstadHero params={{ lang: 'en-US', theme: 'light' }} />
+      <UstadTrafficSignSection params={{ lang: 'en-US', theme: 'light' }} />
       <UstadLicenceJourneySection
-        params={{ lang }}
-        images={
-          [
-            /* image data */
-          ]
-        }
+        params={{ lang: 'en-US', theme: 'light' }}
+        images={[]}
       />
-      <UstadTestimonialCard />
+      <UstadTestimonialCard params={{ lang: 'en-US', theme: 'light' }} />
       <UstadCTA
         title="Ready to start your journey?"
         buttonText="Get Started - For Free"

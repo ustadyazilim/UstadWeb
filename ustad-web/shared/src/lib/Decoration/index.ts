@@ -1,2 +1,2 @@
-export { default as UstadDecorations } from './UstadDecoration/UstadDecorations';
-export { default as UstadGeometricShape } from './UstadGeometricShape/GeometricShape';
+export { default as UstadDecorations } from './UstadDecoration';
+export { default as UstadGeometricShape } from './UstadGeometricShape';

@@ -1,3 +1,6 @@
+/** Type Imports */
+import type { Locale } from '../../../language/i18n-config';
+
 /** Core Imports */
 import { ReactNode } from 'react';
 
@@ -9,6 +12,10 @@ import UstadButton from '../../Button/UstadButton';
 
 /** Props Interface */
 export interface UstadRedefineProductivityCardProps {
+  params: {
+    lang: Locale;
+    theme: string;
+  };
   features?: {
     icon?: ReactNode;
     title: string;

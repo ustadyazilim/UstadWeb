@@ -1,3 +1,6 @@
+/** Type Imports */
+import type { Locale } from '../../../language/i18n-config';
+
 /** Core Imports */
 import Link from 'next/link';
 
@@ -11,7 +14,7 @@ import UstadButton from '../../Button/UstadButton';
 export interface UstadHeaderProps {
   className?: string;
   params: {
-    lang: string;
+    lang: Locale;
     theme: string;
   };
 }

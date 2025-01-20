@@ -10,8 +10,8 @@ import Link from 'next/link';
 import { getDictionary } from '../../../language/get-dictionary';
 
 export interface UstadHeroProps {
+  params: { lang: Locale; theme: string };
   className?: string;
-  params: { lang: Locale };
 }
 
 const AVATAR_GROUPS = [

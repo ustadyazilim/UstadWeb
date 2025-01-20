@@ -8,21 +8,27 @@ import {
   UstadFeatureCard,
   UstadTestimonialCard,
   UstadRedefineProductivityCard,
+  UstadTrafficSignSection,
+  UstadLicenceJourneySection,
 } from '@shared/index';
 
 export default function HomePage() {
+  const params = { lang: 'en-US', theme: 'light' };
+
   return (
     <div className={styles.page}>
-      <UstadHeader />
-
+      <UstadHeader params={params} />
       <main className="wrapper container">
         <h1>Component Showcase</h1>
+        <section>
+          <UstadLicenceJourneySection images={[]} params={params} />
+          <UstadTrafficSignSection params={params} />
+        </section>
 
         <section>
           <h2>Buttons</h2>
           <UstadButton variant="primary">Primary Button</UstadButton>
           <UstadButton variant="secondary">Secondary Button</UstadButton>
-          {/* Add more buttons as needed */}
         </section>
 
         <section>
@@ -35,10 +41,9 @@ export default function HomePage() {
           <UstadCard>
             <p>This is a UstadCard component</p>
           </UstadCard>
-          <UstadFeatureCard />
-          <UstadTestimonialCard />
-          <UstadRedefineProductivityCard />
-          {/* Add more card variants as needed */}
+          <UstadFeatureCard params={params} />
+          <UstadTestimonialCard params={params} />
+          <UstadRedefineProductivityCard params={params} />
         </section>
 
         {/* Add more component sections as needed */}

@@ -1,18 +1,13 @@
-/** Core Imports */
-
 /** Style Imports */
 import styles from '../../../styles/UstadCTA.module.scss';
-
 /** Component Imports */
 import UstadButton from '../../Button/UstadButton';
-
 /** Props Interface */
 export interface UstadCTAProps {
   title?: string;
   buttonText?: string;
   className?: string;
 }
-
 /** Test ID */
 export const USTAD_CTA_TEST = {
   CONTAINER: 'ustad-cta',
@@ -21,7 +16,6 @@ export const USTAD_CTA_TEST = {
   BUTTON: 'ustad-cta-button',
   DECORATIONS: 'ustad-cta-decorations',
 };
-
 const UstadCTA = ({
   title = 'Ready to build your new copilot together?',
   buttonText = 'Book a Demo →',

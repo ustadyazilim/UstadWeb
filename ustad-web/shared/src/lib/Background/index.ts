@@ -1,1 +1,1 @@
-export { default as UstadBackground } from './UstadBackground/UstadBackground';
+export { default as UstadBackground } from './UstadBackground';

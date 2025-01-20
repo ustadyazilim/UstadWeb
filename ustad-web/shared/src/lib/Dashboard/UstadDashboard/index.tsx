@@ -1,3 +1,6 @@
+/** Type Imports */
+import type { Locale } from '../../../language/i18n-config';
+
 /** Style Imports */
 import styles from '../../../styles/UstadDashboard.module.scss';
 
@@ -6,6 +9,10 @@ import UstadButton from '../../Button/UstadButton';
 
 /** Props Interface */
 export interface UstadDashboardProps {
+  params: {
+    lang: Locale;
+    theme: string;
+  };
   className?: string;
 }
 

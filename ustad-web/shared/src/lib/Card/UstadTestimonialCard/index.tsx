@@ -1,4 +1,5 @@
-/** Core Imports */
+/** Type Imports */
+import type { Locale } from '../../../language/i18n-config';
 
 /** Style Imports */
 import styles from '../../../styles/UstadTestimonialCard.module.scss';
@@ -8,6 +9,10 @@ import UstadCard from '../UstadCard';
 
 /** Props Interface */
 export interface UstadTestimonialCardProps {
+  params: {
+    lang: Locale;
+    theme: string;
+  };
   title?: string;
   description?: string;
   author?: {

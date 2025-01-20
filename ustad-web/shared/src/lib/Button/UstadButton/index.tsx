@@ -1,6 +1,7 @@
+/** Core Imports */
 import { PropsWithChildren, ReactNode } from 'react';
+/** Style Imports */
 import styles from '../../../styles/UstadButton.module.scss';
-
 export type UstadButtonVariant =
   | 'primary'
   | 'secondary'
@@ -9,7 +10,6 @@ export type UstadButtonVariant =
   | 'cta-nav'
   | 'text';
 export type UstadButtonSize = 'small' | 'medium' | 'large';
-
 export interface UstadButtonProps extends PropsWithChildren {
   variant?: UstadButtonVariant;
   size?: UstadButtonSize;
@@ -20,13 +20,11 @@ export interface UstadButtonProps extends PropsWithChildren {
   className?: string;
   onClick?: () => void;
 }
-
 export const USTAD_BUTTON_TEST = {
   DEFAULT: 'ustad-button',
   ICON: 'ustad-button-icon',
   LOADING: 'ustad-button-loading',
 } as const;
-
 const UstadButton: React.FC<UstadButtonProps> = ({
   children,
   variant = 'primary',

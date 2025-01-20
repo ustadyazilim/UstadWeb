@@ -12,10 +12,10 @@ const ChatBotEmbed = () => {
           src="http://localhost:5001"
           style={{
             position: 'fixed',
-            bottom: '20px',
-            right: '20px',
+            bottom: '24px',
+            right: '24px',
             border: 'none',
-            width: '440px',
+            width: '460px',
             height: '720px',
             zIndex: 9999,
           }}
@@ -26,7 +26,7 @@ const ChatBotEmbed = () => {
           onClick={() => setIsOpen(true)}
           style={{
             position: 'fixed',
-            bottom: '20px',
+            bottom: '20p<F9>x',
             right: '20px',
             zIndex: 9999,
           }}

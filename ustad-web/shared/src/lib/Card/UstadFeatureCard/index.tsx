@@ -1,3 +1,6 @@
+/** Type Imports */
+import type { Locale } from '../../../language/i18n-config';
+
 /** Core Imports */
 import { ReactNode } from 'react';
 
@@ -6,6 +9,10 @@ import styles from '../../../styles/UstadFeatureCard.module.scss';
 
 /** Props Interface */
 export interface UstadFeatureCardProps {
+  params: {
+    lang: Locale;
+    theme: string;
+  };
   features?: {
     icon: ReactNode;
     title: string;

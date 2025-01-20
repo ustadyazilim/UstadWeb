@@ -1,4 +1,10 @@
+/** Type Imports */
+import type { Locale } from '../../../language/i18n-config';
+
+/** Style Imports */
 import styles from '../../../styles/UstadFooter.module.scss';
+
+/** Component Imports */
 import UstadLink from '../../Link/UstadLink';
 
 interface FooterLink {
@@ -11,6 +17,10 @@ interface FooterColumn {
 }
 
 export interface UstadFooterProps {
+  params: {
+    lang: Locale;
+    theme: string;
+  };
   className?: string;
 }
 

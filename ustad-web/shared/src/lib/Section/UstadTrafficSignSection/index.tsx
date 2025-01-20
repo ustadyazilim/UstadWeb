@@ -10,7 +10,7 @@ import { getDictionary } from '../../../language/get-dictionary';
 
 export interface UstadTrafficSignSectionProps {
   className?: string;
-  params: { lang: Locale };
+  params: { lang: Locale; theme: string };
 }
 
 const TRAFFIC_SIGNS = [

@@ -1,1 +1,1 @@
-export { default as UstadButton } from './UstadButton'
+export { default as UstadButton } from './UstadButton';

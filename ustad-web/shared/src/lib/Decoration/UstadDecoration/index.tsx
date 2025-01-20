@@ -1,20 +1,17 @@
 'use client';
-
+/** Core Imports */
 import { useEffect, useRef } from 'react';
+/** Style Imports */
 import styles from '../../../styles/UstadDecorations.module.scss';
-
 interface UstadDecorationsProps {
-  variant?: 'default' | 'cta';
+  variant?: 'default' | 'secondary';
 }
-
 const UstadDecorations = ({ variant = 'default' }: UstadDecorationsProps) => {
   const decorationsRef = useRef<HTMLDivElement>(null);
-
   useEffect(() => {
     const shapes = decorationsRef.current?.querySelectorAll(
       `.${styles['decorations__shape']}`
     );
-
     shapes?.forEach((shape, index) => {
       const rotation =
         variant === 'default'
@@ -25,7 +22,6 @@ const UstadDecorations = ({ variant = 'default' }: UstadDecorationsProps) => {
       (shape as HTMLElement).style.setProperty('--delay', `${index * 0.5}s`);
     });
   }, [variant]);
-
   return (
     <div className={styles['decorations']} ref={decorationsRef}>
       {[...Array(4)].map((_, index) => (

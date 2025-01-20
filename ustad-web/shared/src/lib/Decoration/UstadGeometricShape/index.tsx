@@ -2,7 +2,6 @@ interface GeometricShapeProps {
   className?: string;
   color?: string;
 }
-
 const GeometricShape = ({
   className,
   color = '#497F18',

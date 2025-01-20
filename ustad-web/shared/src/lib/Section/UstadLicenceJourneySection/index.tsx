@@ -15,6 +15,7 @@ export interface UstadLicenceJourneySectionProps {
   }[];
   params: {
     lang: Locale;
+    theme: string;
   };
 }
 

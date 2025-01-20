@@ -1,11 +1,8 @@
 'use client';
-
 /** Core Imports */
 import { ReactNode, useState } from 'react';
-
 /** Style Imports */
 import styles from '../../../styles/UstadCard.module.scss';
-
 /** Props Interface */
 export interface UstadCardProps {
   variant?: 'default' | 'withTabs';
@@ -17,7 +14,6 @@ export interface UstadCardProps {
   children?: ReactNode;
   className?: string;
 }
-
 /** Test ID */
 export const USTAD_CARD_TEST = {
   CONTAINER: 'ustad-card',
@@ -25,7 +21,6 @@ export const USTAD_CARD_TEST = {
   TAB: 'ustad-card-tab',
   CONTENT: 'ustad-card-content',
 };
-
 const UstadCard = ({
   variant = 'default',
   tabs,
