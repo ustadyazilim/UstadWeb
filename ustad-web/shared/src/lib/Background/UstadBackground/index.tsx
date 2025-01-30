@@ -1,4 +1,5 @@
 import styles from '../../../styles/UstadBackground.module.scss';
+import { UstadGeometricShape } from '../../Decoration';
 
 interface UstadBackgroundProps {
   animated?: boolean;
@@ -12,29 +13,20 @@ const UstadBackground = ({ animated = false }: UstadBackgroundProps) => {
       }`}
     >
       <div className={styles['background__shapes']}>
-        <img
-          src="/images/shapes/shape1.svg"
-          alt=""
-          className={styles['background__shapes--1']}
-          style={{ '--rotation': '-15deg' } as React.CSSProperties}
+        <UstadGeometricShape
+          className={styles['background__shape--1']}
+          color="#29590F"
+          rotation={-15}
         />
-        <img
-          src="/images/shapes/shape2.svg"
-          alt=""
-          className={styles['background__shapes--2']}
-          style={{ '--rotation': '10deg' } as React.CSSProperties}
+        <UstadGeometricShape
+          className={styles['background__shape--2']}
+          color="#FF9914"
+          rotation={10}
         />
-        <img
-          src="/images/shapes/shape3.svg"
-          alt=""
-          className={styles['background__shapes--3']}
-          style={{ '--rotation': '5deg' } as React.CSSProperties}
-        />
-        <img
-          src="/images/shapes/shape4.svg"
-          alt=""
-          className={styles['background__shapes--4']}
-          style={{ '--rotation': '-8deg' } as React.CSSProperties}
+        <UstadGeometricShape
+          className={styles['background__shape--3']}
+          color="#231B3B"
+          rotation={5}
         />
       </div>
     </div>

@@ -1,64 +1,54 @@
+/** Core Imports */
+import Image from 'next/image';
+import Link from 'next/link';
+
 /** Type Imports */
 import type { Locale } from '../../../language/i18n-config';
 
 /** Style Imports */
 import styles from '../../../styles/UstadHero.module.scss';
-
-/** Core Imports */
-import Image from 'next/image';
-import Link from 'next/link';
-import { getDictionary } from '../../../language/get-dictionary';
+import UstadButton from '../../Button/UstadButton';
 
 export interface UstadHeroProps {
-  params: { lang: Locale; theme: string };
-  className?: string;
+  params: {
+    lang: Locale;
+    theme: string;
+  };
 }
 
-const AVATAR_GROUPS = [
-  { id: 1, imageUrl: '/images/avatars/avatar1.jpeg' },
-  { id: 2, imageUrl: '/images/avatars/avatar2.jpeg' },
-  { id: 3, imageUrl: '/images/avatars/avatar3.jpeg' },
-  { id: 4, imageUrl: '/images/avatars/avatar4.jpeg' },
-];
-
-const UstadHero = async ({ className, params }: UstadHeroProps) => {
-  // Variables && Hooks
-  const { lang } = params;
-  const dictionary = await getDictionary(lang);
-
+const UstadHero = ({ params }: UstadHeroProps) => {
   return (
-    <section className={`${styles['hero']} ${className || ''}`}>
+    <div className={styles['hero']}>
       <div className={styles['hero__container']}>
         <div className={styles['hero__content']}>
           <div className={styles['hero__header']}>
             <span className={styles['hero__header--label']}>
-              {dictionary?.home?.heroTitle}
+              It's Easy to Get Your Driver's License
             </span>
-            <h1 className={styles['hero__header--title']}>
-              {dictionary?.home?.welcome}
-            </h1>
+            <h1 className={styles['hero__header--title']}>yesiLdefter</h1>
           </div>
-          <Link href="/purchase" className={styles['hero__cta']}>
-            {dictionary?.home?.ctaStart}
-          </Link>
+
+          <UstadButton variant="cta" className={styles['hero__cta']}>
+            Get started & Join the trusted community of Driver Schools
+          </UstadButton>
+
           <div className={styles['hero__users']}>
             <p className={styles['hero__users--text']}>
-              {dictionary?.home?.heroSubtitle}
+              Join thousands of successful drivers who got their license through
+              our platform
             </p>
             <div className={styles['hero__users--avatars']}>
-              {AVATAR_GROUPS.map((avatar) => (
-                <div key={avatar.id} className={styles['avatar-group']}>
+              {[1, 2, 3, 4].map((index) => (
+                <div key={index} className={styles['avatar-group']}>
                   <div
                     className={`${styles['avatar-group__circle']} ${styles['avatar-group__circle--red']}`}
                   />
                   <div
                     className={`${styles['avatar-group__circle']} ${styles['avatar-group__circle--orange']}`}
                   />
-                  <Image
-                    src={avatar.imageUrl}
-                    alt={`User ${avatar.id}`}
-                    width={40}
-                    height={40}
+                  <img
+                    src={`/images/avatars/avatar${index}.png`}
+                    alt={`User ${index}`}
                     className={styles['avatar-group__image']}
                   />
                 </div>
@@ -66,15 +56,16 @@ const UstadHero = async ({ className, params }: UstadHeroProps) => {
             </div>
           </div>
         </div>
-        <Image
-          src="/images/illustrations/hero-illustration.svg"
-          alt="Hero Shape"
-          width={505}
-          height={390}
-          className={styles['hero__image']}
-        />
+
+        <div className={styles['hero__image_wrapper']}>
+          <img
+            src="/images/illustrations/hero-illustration.svg"
+            alt="Hero illustration"
+            className={styles['hero__image']}
+          />
+        </div>
       </div>
-    </section>
+    </div>
   );
 };
 
