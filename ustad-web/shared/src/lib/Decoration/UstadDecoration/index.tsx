@@ -1,39 +1,54 @@
 'use client';
-/** Core Imports */
-import { useEffect, useRef } from 'react';
-/** Style Imports */
+import React, { useEffect, useRef } from 'react';
 import styles from '../../../styles/UstadDecorations.module.scss';
+
 interface UstadDecorationsProps {
   variant?: 'default' | 'secondary';
 }
+
 const UstadDecorations = ({ variant = 'default' }: UstadDecorationsProps) => {
   const decorationsRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
     const shapes = decorationsRef.current?.querySelectorAll(
       `.${styles['decorations__shape']}`
     );
-    shapes?.forEach((shape, index) => {
-      const rotation =
-        variant === 'default'
-          ? [-15, 10, 5, -8][index]
-          : [-15, 10, 5, -8][index];
 
+    const rotations = {
+      memphics_016: 0,
+      memphics_017: 0,
+      memphics_014: 30,
+    };
+
+    shapes?.forEach((shape) => {
+      const shapeName = shape.getAttribute('data-shape');
+      const rotation = rotations[shapeName as keyof typeof rotations] || 0;
       (shape as HTMLElement).style.setProperty('--rotation', `${rotation}deg`);
-      (shape as HTMLElement).style.setProperty('--delay', `${index * 0.5}s`);
     });
-  }, [variant]);
+  }, []);
+
   return (
     <div className={styles['decorations']} ref={decorationsRef}>
-      {[...Array(4)].map((_, index) => (
-        <img
-          key={index}
-          src={`/images/shapes/shape${index + 1}.svg`}
-          alt=""
-          className={`${styles['decorations__shape']} ${
-            styles[`decorations__shape--${index + 1}`]
-          }`}
-        />
-      ))}
+      <div
+        className={`${styles['decorations__shape']} ${styles['decorations__shape__016']}`}
+        data-shape="memphics_016"
+      >
+        <img src="/images/shapes/shape1.svg" alt="Shape 1" />
+      </div>
+
+      <div
+        className={`${styles['decorations__shape']} ${styles['decorations__shape__017']}`}
+        data-shape="memphics_017"
+      >
+        <img src="/images/shapes/shape4.svg" alt="Shape 4" />
+      </div>
+
+      <div
+        className={`${styles['decorations__shape']} ${styles['decorations__shape__014']}`}
+        data-shape="memphics_014"
+      >
+        <img src="/images/shapes/shape3.svg" alt="Shape 3" />
+      </div>
     </div>
   );
 };

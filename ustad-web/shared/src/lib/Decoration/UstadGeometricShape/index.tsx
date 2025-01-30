@@ -1,10 +1,13 @@
 interface GeometricShapeProps {
   className?: string;
   color?: string;
+  rotation?: number;
 }
+
 const GeometricShape = ({
   className,
   color = '#497F18',
+  rotation = 0,
 }: GeometricShapeProps) => {
   return (
     <svg
@@ -13,6 +16,7 @@ const GeometricShape = ({
       viewBox="0 0 322 325"
       fill="none"
       className={className}
+      style={{ transform: `rotate(${rotation}deg)` }}
     >
       <path d="M4.47 94.72h223.82v225.54H4.47z" fill={color} />
       <path d="M4.48 4.52h313.35v315.75H4.48z" fill="#FF9914" />

@@ -1,7 +1,6 @@
-/** Core Imports */
-import { PropsWithChildren, ReactNode } from 'react';
-/** Style Imports */
+import React from 'react';
 import styles from '../../../styles/UstadButton.module.scss';
+
 export type UstadButtonVariant =
   | 'primary'
   | 'secondary'
@@ -9,78 +8,46 @@ export type UstadButtonVariant =
   | 'cta'
   | 'cta-nav'
   | 'text';
+
 export type UstadButtonSize = 'small' | 'medium' | 'large';
-export interface UstadButtonProps extends PropsWithChildren {
+
+export interface UstadButtonProps {
+  type?: 'button' | 'submit' | 'reset';
   variant?: UstadButtonVariant;
   size?: UstadButtonSize;
-  icon?: ReactNode;
-  iconPosition?: 'left' | 'right';
-  isLoading?: boolean;
-  disabled?: boolean;
-  className?: string;
   onClick?: () => void;
+  children?: React.ReactNode;
+  className?: string;
+  isLoading?: boolean;
+  icon?: React.ReactNode;
+  iconPosition?: 'left' | 'right';
+  disabled?: boolean; // Add this line
 }
-export const USTAD_BUTTON_TEST = {
-  DEFAULT: 'ustad-button',
-  ICON: 'ustad-button-icon',
-  LOADING: 'ustad-button-loading',
-} as const;
+
 const UstadButton: React.FC<UstadButtonProps> = ({
-  children,
+  type = 'button',
   variant = 'primary',
   size = 'medium',
+  onClick,
+  children,
+  className,
+  isLoading = false,
   icon,
   iconPosition = 'left',
-  isLoading,
-  disabled,
-  className,
-  onClick,
-  ...props
+  disabled = false, // Add this line
 }) => {
-  const classNames = [
-    styles['button'],
-    styles[`button--${variant}`],
-    styles[`button--${size}`],
-    isLoading && styles['button--loading'],
-    disabled && styles['button--disabled'],
-    className,
-  ]
-    .filter(Boolean)
-    .join(' ');
-
   return (
     <button
-      className={classNames}
+      type={type}
+      className={`${styles['button']} ${styles[`button--${variant}`]} ${
+        styles[`button--${size}`]
+      } ${className || ''}`}
       onClick={onClick}
-      disabled={disabled || isLoading}
-      {...props}
+      disabled={isLoading || disabled} // Update this line
     >
-      {isLoading && (
-        <span
-          className={styles['button__spinner']}
-          data-testid={USTAD_BUTTON_TEST.LOADING}
-        />
-      )}
-
-      {icon && iconPosition === 'left' && (
-        <span
-          className={styles['button__icon']}
-          data-testid={USTAD_BUTTON_TEST.ICON}
-        >
-          {icon}
-        </span>
-      )}
-
-      {children}
-
-      {icon && iconPosition === 'right' && (
-        <span
-          className={styles['button__icon']}
-          data-testid={USTAD_BUTTON_TEST.ICON}
-        >
-          {icon}
-        </span>
-      )}
+      {iconPosition === 'left' && icon}
+      {isLoading ? 'Loading...' : children}
+      {iconPosition === 'right' && icon}
     </button>
   );
 };
