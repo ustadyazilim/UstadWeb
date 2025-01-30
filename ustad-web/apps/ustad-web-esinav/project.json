@@ -1,0 +1,62 @@
+{
+  "name": "ustad-web-esinav",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/ustad-web-esinav/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nx/vite:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/apps/ustad-web-esinav"
+      },
+      "configurations": {
+        "development": {
+          "mode": "development"
+        },
+        "production": {
+          "mode": "production"
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nx/vite:dev-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "ustad-web-esinav:build",
+        "port": 3003,
+        "host": "localhost"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "ustad-web-esinav:build:development",
+          "hmr": true
+        },
+        "production": {
+          "buildTarget": "ustad-web-esinav:build:production",
+          "hmr": false
+        }
+      }
+    },
+    "preview": {
+      "executor": "@nx/vite:preview-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "ustad-web-esinav:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "ustad-web-esinav:build:development"
+        },
+        "production": {
+          "buildTarget": "ustad-web-esinav:build:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  },
+  "tags": []
+}

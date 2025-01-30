@@ -1,3 +1,4 @@
+import { Locale } from '../../../../shared/src/language/i18n-config';
 import styles from './page.module.css';
 import {
   UstadHeader,
@@ -13,7 +14,7 @@ import {
 } from '@shared/index';
 
 export default function HomePage() {
-  const params = { lang: 'en-US', theme: 'light' };
+  const params = { lang: 'en-US' as Locale, theme: 'light' };
 
   return (
     <div className={styles.page}>
@@ -49,7 +50,7 @@ export default function HomePage() {
         {/* Add more component sections as needed */}
       </main>
 
-      <UstadFooter />
+      <UstadFooter params={params} />
     </div>
   );
 }

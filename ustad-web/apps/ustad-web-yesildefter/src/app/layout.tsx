@@ -9,8 +9,8 @@ import './globals.scss';
 
 /** TODO(@Janberk): Metadata */
 export const metadata = {
-  title: 'Yesil Defter Homepage',
-  description: 'Your destination to drivers licence itself.',
+  title: 'Yesil Defter Portal | Anasayfa',
+  description: 'Yesil Defter Portal.',
 };
 
 export default function RootLayout({
@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="tr" suppressHydrationWarning>
       <body>
-        <UstadLayout params={{ lang: 'en-us', theme: 'light' }}>
+        <UstadLayout params={{ lang: 'en-US', theme: 'light' }}>
           {children}
           <ChatBotEmbed />
         </UstadLayout>

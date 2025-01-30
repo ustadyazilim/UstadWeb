@@ -3,7 +3,8 @@
   "compilerOptions": {
     "outDir": "./dist/out-tsc",
     "declaration": true,
-    "types": ["node"]
+    "types": ["node"],
+    "jsx": "react-jsx"
   },
   "include": ["shared/src/**/*.ts", "shared/src/**/*.tsx"],
   "exclude": [

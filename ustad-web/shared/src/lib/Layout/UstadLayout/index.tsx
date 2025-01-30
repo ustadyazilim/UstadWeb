@@ -30,6 +30,7 @@ const UstadLayout = ({ children, params }: UstadLayoutProps) => {
       </Suspense>
       <main className={styles['layout__main']}>
         <UstadDecorations />
+
         {children}
       </main>
       <UstadFooter params={params} />

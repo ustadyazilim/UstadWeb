@@ -45,7 +45,8 @@
     "next-env.d.ts",
     "node_modules/gsap",
     "src",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    "../../dist/apps/ustad-web-yesildefter/.next/types/**/*.ts"
   ],
   "exclude": ["node_modules", "build"]
 }

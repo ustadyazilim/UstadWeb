@@ -1,0 +1,123 @@
+@use './UstadDesignTokens.scss' as tokens;
+
+// Font Families
+$font-family-base: tokens.$font-family-base;
+$font-family-secondary: tokens.$font-family-secondary;
+$font-family-tertiary: tokens.$font-family-tertiary;
+
+// Typography Mixins
+@mixin text-cta {
+  font-family: $font-family-base;
+  font-weight: tokens.$font-weight-bold;
+  font-size: tokens.$font-size-2xl;
+  line-height: tokens.$line-height-tight;
+  letter-spacing: -0.02em;
+}
+
+@mixin text-nav {
+  font-family: $font-family-base;
+  font-weight: tokens.$font-weight-bold;
+  font-size: tokens.$font-size-lg;
+  line-height: tokens.$line-height-normal;
+  letter-spacing: -0.02em;
+}
+
+@mixin text-hero-title {
+  font-family: $font-family-base;
+  font-weight: tokens.$font-weight-bold;
+  font-size: tokens.$font-size-hero-title;
+  line-height: tokens.$line-height-tight;
+  letter-spacing: tokens.$letter-spacing-tight;
+}
+
+@mixin text-section-title {
+  font-family: $font-family-secondary;
+  font-weight: tokens.$font-weight-bold;
+  font-size: tokens.$font-size-5xl;
+  line-height: tokens.$line-height-tight;
+  letter-spacing: -0.02em;
+}
+
+@mixin text-description {
+  font-family: $font-family-base;
+  font-weight: tokens.$font-weight-semibold;
+  font-size: tokens.$font-size-2xl;
+  line-height: tokens.$line-height-tight;
+  letter-spacing: -0.02em;
+}
+
+@mixin text-feature-title {
+  font-family: $font-family-base;
+  font-weight: tokens.$font-weight-bold;
+  font-size: tokens.$font-size-lg;
+  line-height: tokens.$line-height-snug;
+  letter-spacing: -0.02em;
+}
+
+@mixin text-yesildefter-title {
+  font-family: $font-family-base;
+  font-weight: tokens.$font-weight-bold;
+  font-size: tokens.$font-size-5xl;
+  line-height: tokens.$line-height-tight;
+  letter-spacing: tokens.$letter-spacing-tight;
+}
+
+@mixin text-body {
+  font-family: $font-family-base;
+  font-weight: tokens.$font-weight-normal;
+  font-size: tokens.$font-size-base;
+  line-height: tokens.$line-height-tight;
+  letter-spacing: -0.02em;
+}
+
+// Typography System
+.header-cta {
+  @include text-cta;
+}
+
+.header-nav {
+  @include text-nav;
+}
+
+.hero-title {
+  @include text-hero-title;
+}
+
+.section-title {
+  @include text-section-title;
+}
+
+.description {
+  @include text-description;
+}
+
+.feature-title {
+  @include text-feature-title;
+}
+
+.yesiLdefter-title {
+  @include text-yesildefter-title;
+}
+
+.body {
+  @include text-body;
+}
+
+// Legacy Typography Classes (for backward compatibility)
+.typography {
+  &-cta {
+    @include text-cta;
+  }
+
+  &-nav {
+    @include text-nav;
+  }
+
+  &-title-main {
+    @include text-section-title;
+  }
+
+  &-description-bold {
+    @include text-description;
+  }
+}

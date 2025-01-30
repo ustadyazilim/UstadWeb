@@ -1,4 +1,4 @@
-@use '@styles/UstadDesignTokens.scss' as tokens;
+@use './UstadDesignTokens' as tokens;
 
 .card {
   background: tokens.$color-background-light;

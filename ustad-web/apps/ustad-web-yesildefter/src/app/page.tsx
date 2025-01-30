@@ -1,28 +1,24 @@
 /** Component Imports */
+import React from 'react';
 import {
   UstadHero,
+  UstadBackground,
   UstadTrafficSignSection,
-  UstadLicenceJourneySection,
-  UstadTestimonialCard,
-  UstadCTA,
-  UstadFeatureCard,
+  UstadIntegrationSolutions,
+  UstadWhyYesildefter,
 } from '@shared/index';
 
+/** NOTE(@Janberk): Home page */
 export default async function Page() {
   return (
     <>
-      <UstadHero params={{ lang: 'en-US', theme: 'light' }} />
-      <UstadTrafficSignSection params={{ lang: 'en-US', theme: 'light' }} />
-      <UstadLicenceJourneySection
-        params={{ lang: 'en-US', theme: 'light' }}
-        images={[]}
-      />
-      <UstadTestimonialCard params={{ lang: 'en-US', theme: 'light' }} />
-      <UstadCTA
-        title="Ready to start your journey?"
-        buttonText="Get Started - For Free"
-      />
-      <UstadFeatureCard />
+      <UstadBackground animated />
+      <main className="main-content" style={{ paddingTop: '160px' }}>
+        <UstadHero params={{ lang: 'en-US', theme: 'light' }} />
+        <UstadTrafficSignSection params={{ lang: 'en-US', theme: 'light' }} />
+        <UstadIntegrationSolutions params={{ lang: 'en-US', theme: 'light' }} />
+        <UstadWhyYesildefter params={{ lang: 'en-US', theme: 'light' }} />
+      </main>
     </>
   );
 }

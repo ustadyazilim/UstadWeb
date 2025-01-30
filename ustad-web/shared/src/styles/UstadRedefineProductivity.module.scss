@@ -1,16 +1,16 @@
-@use '@styles/UstadDesignTokens.scss' as tokens;
+@use './UstadDesignTokens' as tokens;
 
 .redefine {
-  padding: 40px;
+  padding: tokens.$spacing-2xl;
 
   &__content {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: tokens.$spacing-2xl;
   }
 
   &__title {
-    font-size: tokens.$font-size-xxl;
+    font-size: tokens.$font-size-2xl;
     font-weight: tokens.$font-weight-bold;
     color: tokens.$color-text-primary;
     text-align: center;
@@ -19,21 +19,21 @@
   &__features {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 32px;
+    gap: tokens.$spacing-xl;
   }
 
   &__action {
     display: flex;
     justify-content: center;
-    margin-top: 24px;
+    margin-top: tokens.$spacing-2xl;
   }
 }
 
 .feature {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  padding: 28px;
+  gap: tokens.$spacing-lg;
+  padding: tokens.$spacing-lg;
   background: tokens.$color-background-secondary;
   border-radius: tokens.$radius-card-md;
   transition: all 0.3s ease;

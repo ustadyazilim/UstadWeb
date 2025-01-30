@@ -1,4 +1,5 @@
-@use '@styles/UstadDesignTokens.scss' as tokens;
+@use './UstadDesignTokens' as tokens;
+@use './UstadTypography' as typography;
 
 .cta {
   position: relative;
@@ -12,9 +13,10 @@
     position: relative;
     z-index: 2;
     display: flex;
+
     flex-direction: column;
     align-items: center;
-    gap: 40px;
+    gap: tokens.$spacing-2xl;
     text-align: center;
   }
 
@@ -29,15 +31,15 @@
     color: tokens.$color-text-primary;
   }
 
-  &__button {
-    min-width: 180px;
-  }
-
   &__decorations {
     position: absolute;
     inset: 0;
     z-index: 1;
     pointer-events: none;
+  }
+
+  &__button {
+    @include typography.text-cta;
   }
 }
 

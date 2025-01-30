@@ -1,27 +1,25 @@
-@import './UstadDesignTokens.scss';
+@use './UstadDesignTokens' as tokens;
 
 .section {
   width: 100%;
-  max-width: $container-width;
-  padding: 180px $spacing-4xl;
+  max-width: 1000px;
+  padding: 180px 0px;
   margin: auto;
   &__container {
     display: flex;
     align-items: center;
-    gap: $spacing-4xl;
   }
   &__signs {
     flex: 1;
     position: relative;
   }
   .signs__group {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: $spacing-xl;
+    display: flex;
+    gap: tokens.$spacing-xl;
   }
   .signs__item {
     position: relative;
-    height: 232px;
+    height: 240px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -43,18 +41,18 @@
     }
 
     &--orange::before {
-      background: rgba($color-primary-orange, 0.15);
+      background: rgba(tokens.$color-primary-orange, 0.15);
       transform: rotate(-15deg) scale(1.2);
     }
 
     &--red::before {
-      background: rgba($color-error, 0.15);
-      transform: rotate(10deg) scale(1.2);
+      background: rgba(tokens.$color-primary-red, 0.15);
+      transform: rotate(15deg) scale(1.2);
     }
 
     &--green::before {
-      background: rgba($color-primary-green, 0.15);
-      transform: rotate(5deg) scale(1.2);
+      background: rgba(tokens.$color-primary, 0.15);
+      transform: rotate(-15deg) scale(1.2);
     }
 
     &:hover::before {
@@ -65,27 +63,29 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: $spacing-lg;
+    gap: tokens.$spacing-2xl;
   }
-
   &__title {
-    font-size: $font-size-4xl;
-    font-weight: $font-weight-bold;
-    color: $color-text-dark;
+    font-size: tokens.$font-size-4xl;
+    font-weight: tokens.$font-weight-bold;
+    letter-spacing: tokens.$letter-spacing-tight;
+    color: tokens.$color-text-primary;
+    font-family: tokens.$font-family-secondary;
   }
-
   &__description {
-    font-size: $font-size-base;
-    color: $color-text-secondary;
-    max-width: 480px;
+    font-size: tokens.$font-size-lg;
+    color: tokens.$color-text-secondary;
+    line-height: tokens.$line-height-tight;
+    letter-spacing: tokens.$letter-spacing-tight;
+    font-family: tokens.$font-family-tertiary;
   }
 }
 
-@media (max-width: $breakpoint-tablet) {
+@media (max-width: tokens.$breakpoint-tablet) {
   .section {
     &__container {
       flex-direction: column;
-      gap: $spacing-2xl;
+      gap: tokens.$spacing-2xl;
     }
 
     &__signs {
