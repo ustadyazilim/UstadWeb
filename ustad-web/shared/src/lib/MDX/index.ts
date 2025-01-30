@@ -1,1 +1,1 @@
-export { default as UstadMDX } from './UstadMDX'
+export { default as UstadMDX } from './UstadMDX';

@@ -41,7 +41,7 @@ const UstadCTA = ({
           <span>together?</span>
         </h2>
         <UstadButton
-          variant="primary"
+          variant="cta"
           size="large"
           className={styles['cta__button']}
           data-testid={USTAD_CTA_TEST.BUTTON}
