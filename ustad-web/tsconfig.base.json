@@ -4,24 +4,24 @@
     "rootDir": ".",
     "sourceMap": true,
     "declaration": false,
-    "moduleResolution": "node",
+    "jsx": "react-jsx",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "importHelpers": true,
-    "target": "es2015",
-    "module": "esnext",
+    "target": "es2020",
+    "module": "es2022",
+    "moduleResolution": "node",
     "lib": ["es2020", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@shared/*": ["shared/src/*"],
-      "@styles/*": ["shared/src/styles/*"],
       "@chatbot": ["apps/ustad-web-chatbot/src"],
       "@chatbot/*": ["apps/ustad-web-chatbot/src/*"],
-      "@ustad-web-chatbot": ["apps/ustad-web-chatbot/src/index.ts"],
-      "@ustad-web-chatbot/*": ["apps/ustad-web-chatbot/src/*"]
-    }
+      "@shared/*": ["shared/src/*"],
+      "@styles/*": ["shared/src/styles/*"]
+    },
+    "resolveJsonModule": true
   },
   "exclude": ["node_modules", "tmp"]
 }

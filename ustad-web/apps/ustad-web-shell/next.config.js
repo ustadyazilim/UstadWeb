@@ -12,6 +12,14 @@ const nextConfig = {
     // See: https://github.com/gregberge/svgr
     svgr: false,
   },
+  async rewrites() {
+    return [
+      {
+        source: '/esinav/:path*',
+        destination: 'http://localhost:4201/:path*', // This will be the port where your Angular app runs
+      },
+    ];
+  },
 };
 
 const plugins = [

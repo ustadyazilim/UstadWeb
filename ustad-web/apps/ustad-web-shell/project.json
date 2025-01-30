@@ -24,16 +24,19 @@
       "options": {
         "buildTarget": "ustad-web-shell:build",
         "dev": true,
-        "port": 3001
+        "port": 3001,
+        "buildOptions": {}
       },
       "configurations": {
         "development": {
           "buildTarget": "ustad-web-shell:build:development",
-          "dev": true
+          "dev": true,
+          "buildOptions": {}
         },
         "production": {
           "buildTarget": "ustad-web-shell:build:production",
-          "dev": false
+          "dev": false,
+          "buildOptions": {}
         }
       }
     }

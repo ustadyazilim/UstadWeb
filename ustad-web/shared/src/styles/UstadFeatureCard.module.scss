@@ -1,20 +1,21 @@
-@use '@styles/UstadDesignTokens.scss' as tokens;
+@use './UstadDesignTokens' as tokens;
+@use './UstadTypography' as typography;
 
 .features {
-  margin: 100px auto;
+  margin: tokens.$spacing-xl auto;
 
   &__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+    gap: tokens.$spacing-xl;
   }
 
   &__item {
     display: flex;
-    gap: 28px;
-    padding: 36px;
+    gap: tokens.$spacing-lg;
+    padding: tokens.$spacing-lg;
     background: tokens.$color-background-secondary;
-    border-radius: 24px;
+    border-radius: tokens.$border-radius-md;
     transition: all 0.3s ease;
 
     &:hover {
@@ -63,38 +64,33 @@
   }
 
   &__title {
-    font-size: tokens.$font-size-lg;
-    font-weight: tokens.$font-weight-semibold;
-    color: tokens.$color-text-primary;
-    line-height: 1.4;
+    @include typography.text-feature-title;
   }
 
   &__description {
-    font-size: tokens.$font-size-base;
-    color: tokens.$color-text-secondary;
-    line-height: 1.6;
+    @include typography.text-body;
   }
 }
 
 // Responsive styles
 @media (max-width: tokens.$breakpoint-tablet) {
   .features {
-    margin: 60px auto;
+    margin: tokens.$spacing-xl auto;
 
     &__grid {
       grid-template-columns: repeat(2, 1fr);
-      gap: 24px;
+      gap: tokens.$spacing-lg;
     }
 
     &__item {
-      padding: 24px;
+      padding: tokens.$spacing-lg;
     }
   }
 }
 
 @media (max-width: tokens.$breakpoint-mobile) {
   .features {
-    margin: 40px auto;
+    margin: tokens.$spacing-lg auto;
 
     &__grid {
       grid-template-columns: 1fr;
@@ -103,8 +99,8 @@
     &__item {
       flex-direction: column;
       align-items: flex-start;
-      gap: 16px;
-      padding: 20px;
+      gap: tokens.$spacing-md;
+      padding: tokens.$spacing-md;
     }
   }
 }

@@ -29,11 +29,13 @@
       "configurations": {
         "development": {
           "buildTarget": "ustad-web-yesildefter:build:development",
-          "dev": true
+          "dev": true,
+          "buildOptions": {}
         },
         "production": {
           "buildTarget": "ustad-web-yesildefter:build:production",
-          "dev": false
+          "dev": false,
+          "buildOptions": {}
         }
       }
     }

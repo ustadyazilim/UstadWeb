@@ -1,0 +1,73 @@
+@use './UstadDesignTokens' as tokens;
+@use './UstadTypography' as typography;
+
+.why {
+  width: 100%;
+  margin: 180px auto;
+  padding: tokens.$spacing-md;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: tokens.$spacing-md;
+    padding: tokens.$spacing-md;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    gap: tokens.$spacing-sm;
+    padding: tokens.$spacing-xl 0;
+    @include typography.text-section-title;
+    span {
+      display: inline-block;
+    }
+  }
+
+  &__highlight {
+    color: #295c00;
+    font-family: tokens.$font-family-base;
+    font-weight: 800;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    gap: tokens.$spacing-xl;
+    @include typography.text-description;
+    color: #1a1a1a;
+    max-width: 560px;
+    p {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+@media (max-width: tokens.$breakpoint-tablet) {
+  .why {
+    padding: tokens.$spacing-xl;
+
+    &__title {
+      font-size: 48px;
+    }
+
+    &__description {
+      font-size: 24px;
+    }
+  }
+}
+
+@media (max-width: tokens.$breakpoint-mobile) {
+  .why {
+    padding: tokens.$spacing-lg;
+
+    &__title {
+      font-size: 36px;
+    }
+
+    &__description {
+      font-size: 20px;
+    }
+  }
+}

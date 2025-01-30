@@ -1,94 +1,78 @@
-@use '@styles/UstadDesignTokens.scss' as tokens;
+@use './UstadDesignTokens' as tokens;
+@use './UstadTypography' as typography;
 
 .header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 100;
-  width: 100%;
-  padding: 48px;
+  z-index: tokens.$z-index-fixed;
+  height: tokens.$header-height;
+  padding: tokens.$header-padding;
   background: transparent;
 
   &__container {
-    max-width: 1344px;
+    max-width: tokens.$container-width;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 327px;
   }
 
   &__logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 81px;
-    height: 50px;
-    background: tokens.$color-primary-green;
-    border: 1px solid tokens.$color-text-primary;
-    border-radius: 20px;
-    box-shadow: 0 5px 0 rgba(10, 10, 10, 1);
-    color: tokens.$color-background-light;
-    font-size: tokens.$font-size-base;
+    font-size: tokens.$font-size-xl;
+    font-weight: tokens.$font-weight-bold;
+    color: tokens.$color-text-light;
     text-decoration: none;
-    transition: transform 0.2s ease;
-
-    &:hover {
-      transform: translateY(-2px);
-    }
-
-    &:active {
-      transform: translateY(2px);
-    }
   }
 
   &__nav {
     display: flex;
     align-items: center;
-    gap: 24px;
+    margin-left: auto; // Push nav items to the right
+    gap: tokens.$nav-item-gap;
+
+    .nav__item {
+      color: tokens.$nav-text-color;
+      font-weight: tokens.$nav-font-weight;
+      font-size: tokens.$nav-font-size;
+      text-decoration: none;
+      transition: tokens.$transition-base;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 8px;
+      padding: 12px 16px;
+
+      &:hover {
+        color: tokens.$nav-hover-color;
+      }
+    }
   }
 
   &__actions {
     display: flex;
     align-items: center;
-    gap: 24px;
-  }
+    gap: tokens.$spacing-md;
+    margin-left: tokens.$spacing-xl; // Space between nav and actions
 
-  &__button {
-    display: flex;
-    align-items: center;
-    gap: 4.98px;
-    padding: 12px 24px;
-    background: tokens.$color-primary-green;
-    border: 1px solid tokens.$color-text-primary;
-    border-radius: 20px;
-    box-shadow: 0 5px 0 rgba(10, 10, 10, 1);
-    color: tokens.$color-background-light;
-    font-size: tokens.$font-size-base;
-    text-decoration: none;
-    transition: all 0.2s ease;
+    .avatar {
+      width: tokens.$avatar-size;
+      height: tokens.$avatar-size;
+      border-radius: tokens.$avatar-border-radius;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+      overflow: hidden;
+      cursor: pointer;
+      transition: tokens.$transition-base;
 
-    &:hover {
-      transform: translateY(-2px);
-    }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
 
-    &:active {
-      transform: translateY(2px);
-    }
-  }
-}
-
-.nav {
-  &__item {
-    font-size: tokens.$font-size-base;
-    font-weight: tokens.$font-weight-bold;
-    color: tokens.$color-text-primary;
-    text-decoration: none;
-    transition: color 0.2s ease;
-
-    &:hover {
-      color: tokens.$color-primary-green;
+      &:hover {
+        transform: scale(1.05);
+      }
     }
   }
 }
@@ -96,23 +80,45 @@
 // Responsive styles
 @media (max-width: tokens.$breakpoint-tablet) {
   .header {
-    height: 70px;
-
-    &__nav {
-      display: none; // Hide navigation on mobile
-    }
+    padding: tokens.$spacing-md tokens.$spacing-lg;
 
     &__container {
-      padding: 0 16px;
+      padding: 0;
+      justify-content: space-between;
+    }
+
+    &__nav {
+      display: none;
+    }
+
+    &__actions {
+      .get-started,
+      .exit-button {
+        display: none;
+      }
+    }
+
+    .header__mobile {
+      display: block;
+      /* Add styles for mobile menu icon if needed */
     }
   }
 }
 
-// Add mobile menu styles if needed
-.header__mobile {
-  display: none;
+.footer {
+  background-color: #070606; // Footer background color
+  color: #c4c4c4; // Footer text color
+  padding: 40px 0; // Adjust padding
+  text-align: center; // Center text
+}
 
-  @media (max-width: tokens.$breakpoint-tablet) {
-    display: block;
+.footer__text {
+  font-size: 14px; // Adjust font size
+  margin-bottom: 12px; // Adjust spacing
+}
+
+.nav {
+  &__item {
+    @include typography.text-nav;
   }
 }
