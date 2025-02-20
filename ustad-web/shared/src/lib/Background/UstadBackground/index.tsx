@@ -15,7 +15,7 @@ const UstadBackground = ({ animated = false }: UstadBackgroundProps) => {
       <div className={styles['background__shapes']}>
         <UstadGeometricShape
           className={styles['background__shape--1']}
-          color="#29590F"
+          color="#497F18"
           rotation={-15}
         />
         <UstadGeometricShape

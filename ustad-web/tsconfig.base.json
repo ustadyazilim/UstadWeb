@@ -19,7 +19,12 @@
       "@chatbot": ["apps/ustad-web-chatbot/src"],
       "@chatbot/*": ["apps/ustad-web-chatbot/src/*"],
       "@shared/*": ["shared/src/*"],
-      "@styles/*": ["shared/src/styles/*"]
+      "@styles/*": ["shared/src/styles/*"],
+      "@esinav/*": ["apps/ustad-web-esinav/src/*"],
+      "@esinav": ["apps/ustad-web-esinav/src"],
+      "preact": ["node_modules/preact"],
+      "preact/*": ["node_modules/preact/*"],
+      "@preact/*": ["node_modules/@preact/*"]
     },
     "resolveJsonModule": true
   },

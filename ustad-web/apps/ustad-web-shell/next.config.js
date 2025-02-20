@@ -16,7 +16,7 @@ const nextConfig = {
     return [
       {
         source: '/esinav/:path*',
-        destination: 'http://localhost:4201/:path*', // This will be the port where your Angular app runs
+        destination: 'http://localhost:3003/:path*',
       },
     ];
   },

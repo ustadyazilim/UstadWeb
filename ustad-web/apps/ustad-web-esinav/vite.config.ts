@@ -1,11 +1,20 @@
 /// <reference types='vitest' />
 import { defineConfig } from 'vite';
 import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin';
-import react from '@vitejs/plugin-react';
+import preact from '@preact/preset-vite';
+import path from 'path';
 
 export default defineConfig({
   root: __dirname,
   cacheDir: '../../node_modules/.vite/apps/ustad-web-esinav',
+
+  resolve: {
+    alias: {
+      '@esinav': path.resolve(__dirname, './src'),
+      preact: path.resolve(__dirname, '../../node_modules/preact'),
+      '@preact': path.resolve(__dirname, '../../node_modules/@preact'),
+    },
+  },
 
   server: {
     port: 3003,
@@ -18,21 +27,7 @@ export default defineConfig({
     host: 'localhost',
   },
 
-  plugins: [
-    react({
-      jsxRuntime: 'automatic',
-      jsxImportSource: 'preact',
-      babel: {
-        plugins: [
-          [
-            '@babel/plugin-transform-react-jsx',
-            { runtime: 'automatic', importSource: 'preact' },
-          ],
-        ],
-      },
-    }),
-    nxViteTsPaths(),
-  ],
+  plugins: [preact(), nxViteTsPaths()],
 
   build: {
     outDir: '../../dist/apps/ustad-web-esinav',
@@ -44,9 +39,9 @@ export default defineConfig({
       output: {
         entryFileNames: '[name].js',
         chunkFileNames: '[name].js',
-        assetFileNames: '[name].[ext]'
-      }
-    }
+        assetFileNames: '[name].[ext]',
+      },
+    },
   },
 
   test: {

@@ -1,0 +1,6 @@
+ustad-web/.nx-temp/*
+ustad-web/apps/ustad-web-shell/.next/*
+ustad-web/apps/ustad-web-yesildefter/.next/*
+ustad-web/lib/*
+ustad-web/node_modules/*
+ustad-web/bin/*
