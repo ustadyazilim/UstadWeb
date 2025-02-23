@@ -1,7 +1,9 @@
-import styles from '../../../styles/UstadBackground.module.scss';
+/** Core Imports */
 import { UstadGeometricShape } from '../../Decoration';
-
-interface UstadBackgroundProps {
+/** Style Imports */
+import styles from '../../../styles/UstadBackground.module.scss';
+/** Props Interface */
+export interface UstadBackgroundProps {
   animated?: boolean;
 }
 
@@ -15,18 +17,21 @@ const UstadBackground = ({ animated = false }: UstadBackgroundProps) => {
       <div className={styles['background__shapes']}>
         <UstadGeometricShape
           className={styles['background__shape--1']}
-          color="#497F18"
-          rotation={-15}
+          color="#295E00"
+          rotation={-37.5}
+          blur="true"
         />
         <UstadGeometricShape
           className={styles['background__shape--2']}
           color="#FF9914"
-          rotation={10}
+          rotation={45}
+          blur="true"
         />
         <UstadGeometricShape
           className={styles['background__shape--3']}
-          color="#231B3B"
-          rotation={5}
+          color="#F31B3F"
+          rotation={15.5}
+          blur="true"
         />
       </div>
     </div>

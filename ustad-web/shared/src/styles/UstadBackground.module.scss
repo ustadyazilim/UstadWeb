@@ -4,7 +4,11 @@
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(165.96deg, #e0e9df 24.5%, #f0f2ef 64.5%);
+  background: linear-gradient(
+    165.96deg,
+    rgba(224, 233, 223, 1) 24.5%,
+    rgba(240, 242, 239, 1) 64.5%
+  );
   top: 0;
   left: 0;
   z-index: -1;
@@ -19,18 +23,21 @@
     position: absolute;
     top: 10%;
     left: 5%;
+    filter: blur(120px);
   }
 
   &__shape--2 {
     position: absolute;
     top: 30%;
     right: 15%;
+    filter: blur(120px);
   }
 
   &__shape--3 {
     position: absolute;
     bottom: 10%;
     left: 20%;
+    filter: blur(120px);
   }
 }
 

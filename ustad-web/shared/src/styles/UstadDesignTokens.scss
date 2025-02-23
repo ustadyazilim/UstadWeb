@@ -198,15 +198,6 @@ $color-gradient-second: rgba(255, 255, 255, 1); // White
 $color-gradient-third: rgba(255, 231, 200, 1); // r: 1, g: 0.9054, b: 0.7821
 $color-gradient-end: rgba(255, 255, 255, 1); // White
 
-// Main background gradient with correct transform matrix from Figma
-$background-gradient: linear-gradient(
-  to bottom,
-  $color-gradient-start 0%,
-  $color-gradient-second 20.67%,
-  $color-gradient-third 54.67%,
-  $color-gradient-end 100%
-);
-
 // Line heights
 $line-height-tight: 1.2;
 $line-height-snug: 1.44;
