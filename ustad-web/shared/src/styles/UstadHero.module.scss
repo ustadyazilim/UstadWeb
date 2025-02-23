@@ -4,8 +4,8 @@
 .hero {
   width: 1000px;
   margin: auto;
-  background: tokens.$color-background-primary;
-  border-radius: tokens.$border-radius-md;
+  background: rgba(255, 255, 255, 0.5); // Semi-transparent white background
+  border-radius: tokens.$border-radius-lg; // Rounded corners
   padding: tokens.$spacing-sm;
   position: relative;
   z-index: 1;
@@ -22,7 +22,6 @@
     flex: 1;
     height: 100%;
     padding: tokens.$spacing-md;
-    border-radius: tokens.$border-radius-sm 0px 0px tokens.$border-radius-sm;
     display: flex;
     flex-direction: column;
     gap: tokens.$spacing-xl;

@@ -28,11 +28,7 @@ const UstadLayout = ({ children, params }: UstadLayoutProps) => {
       <Suspense fallback={<div>Loading...</div>}>
         <UstadHeader params={params} />
       </Suspense>
-      <main className={styles['layout__main']}>
-        <UstadDecorations />
-
-        {children}
-      </main>
+      <main className={styles['layout__main']}>{children}</main>
       <UstadFooter params={params} />
     </div>
   );

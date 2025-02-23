@@ -14,19 +14,16 @@ const UstadBackground = ({ animated = false }: UstadBackgroundProps) => {
     >
       <div className={styles['background__shapes']}>
         <UstadGeometricShape
-          className={styles['background__shape--1']}
-          color="#29590F"
-          rotation={-15}
+          className={`${styles['background__shapes--1']} ${styles['background__shape']}`}
+          src="/images/shapes/shape1.svg"
         />
         <UstadGeometricShape
-          className={styles['background__shape--2']}
-          color="#FF9914"
-          rotation={10}
+          className={`${styles['background__shapes--2']} ${styles['background__shape']}`}
+          src="/images/shapes/shape2.svg"
         />
         <UstadGeometricShape
-          className={styles['background__shape--3']}
-          color="#231B3B"
-          rotation={5}
+          className={`${styles['background__shapes--3']} ${styles['background__shape']}`}
+          src="/images/shapes/shape3.svg"
         />
       </div>
     </div>
