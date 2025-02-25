@@ -3,14 +3,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
 // Brand Colors
-$color-background-dark: #0a0a0a; // Dark background
-$color-background-primary: #ffffff;
-$color-background-secondary: rgba(#0a0a0a, 0.05);
-$color-background-accent: rgba(#ff4d00, 0.1);
+$color-background-dark: #241b3b; // Dark background
+$color-background-primary: #f5f7f3;
+$color-background-secondary: #e0e9df;
+$color-background-accent: rgba(255, 153, 1, 0.1); // Updated orange
 $color-background-light: #ffffff; // White background (added)
-$color-text-primary: #0a0a0a;
-$color-text-secondary: rgba(#0a0a0a, 0.7);
-$color-border: rgba(255, 255, 255, 0.1); // Border color
+$color-text-primary: #1a1a1a;
+$color-text-secondary: rgba(26, 26, 26, 0.7);
+$color-border: rgba(36, 27, 59, 0.1); // Using new dark blue
+
+// New color additions
+$color-primary-orange: #ff9901;
+$color-primary-dark-blue: #241b3b;
+$color-primary-green: #295e00;
+$color-secondary-beige: #c4cfb3;
 
 // Button Specific
 $button-padding-sm: 12px 20px;
@@ -191,15 +197,6 @@ $color-gradient-start: rgba(
 $color-gradient-second: rgba(255, 255, 255, 1); // White
 $color-gradient-third: rgba(255, 231, 200, 1); // r: 1, g: 0.9054, b: 0.7821
 $color-gradient-end: rgba(255, 255, 255, 1); // White
-
-// Main background gradient with correct transform matrix from Figma
-$background-gradient: linear-gradient(
-  to bottom,
-  $color-gradient-start 0%,
-  $color-gradient-second 20.67%,
-  $color-gradient-third 54.67%,
-  $color-gradient-end 100%
-);
 
 // Line heights
 $line-height-tight: 1.2;

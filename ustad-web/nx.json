@@ -1,39 +1,7 @@
 {
-  "affected": {
-    "defaultBase": "master"
-  },
-  "tasksRunnerOptions": {
-    "default": {
-      "options": {
-        "canTrackAnalytics": false,
-        "showUsageWarnings": true
-      }
-    }
-  },
-  "namedInputs": {
-    "default": [
-      "{projectRoot}/**/*",
-      "sharedGlobals"
-    ],
-    "sharedGlobals": [
-      "{workspaceRoot}/tsconfig.base.json",
-      "{workspaceRoot}/babel.config.json",
-      "{workspaceRoot}/package.json"
-    ],
-    "production": [
-      "default",
-      "!{projectRoot}/**/?(*.)+(spec|test).[jt]s?(x)?(.snap)",
-      "!{projectRoot}/tsconfig.spec.json",
-      "!{projectRoot}/jest.config.[jt]s",
-      "!{projectRoot}/src/test-setup.[jt]s"
-    ]
-  },
   "targetDefaults": {
     "build": {
-      "inputs": [
-        "production",
-        "^production"
-      ],
+      "inputs": ["production", "^production"],
       "cache": true
     },
     "lint": {
@@ -41,11 +9,7 @@
     },
     "@nx/jest:jest": {
       "cache": true,
-      "inputs": [
-        "default",
-        "^production",
-        "{workspaceRoot}/jest.preset.js"
-      ],
+      "inputs": ["default", "^production", "{workspaceRoot}/jest.preset.js"],
       "options": {
         "passWithNoTests": true
       },
@@ -75,15 +39,37 @@
       ]
     }
   },
+  "tasksRunnerOptions": {
+    "default": {
+      "options": {
+        "canTrackAnalytics": false,
+        "showUsageWarnings": true
+      }
+    }
+  },
+  "namedInputs": {
+    "default": ["{projectRoot}/**/*", "sharedGlobals"],
+    "sharedGlobals": [
+      "{workspaceRoot}/tsconfig.base.json",
+      "{workspaceRoot}/babel.config.json",
+      "{workspaceRoot}/package.json"
+    ],
+    "production": [
+      "default",
+      "!{projectRoot}/**/?(*.)+(spec|test).[jt]s?(x)?(.snap)",
+      "!{projectRoot}/tsconfig.spec.json",
+      "!{projectRoot}/jest.config.[jt]s",
+      "!{projectRoot}/src/test-setup.[jt]s"
+    ]
+  },
   "extends": "@nx/workspace/presets/core.json",
-  "npmScope": "ustad",
   "plugins": [
     {
       "plugin": "@nx/next/plugin",
       "options": {
-        "startTargetName": "start",
-        "buildTargetName": "next:build",
-        "devTargetName": "dev",
+        "startTargetName": "serve", // Changed from "start"
+        "buildTargetName": "build", // Changed from "next:build"
+        "devTargetName": "serve", // Changed from "dev"
         "serveStaticTargetName": "serve-static"
       }
     }
@@ -111,5 +97,6 @@
       }
     }
   },
-  "$schema": "./node_modules/nx/schemas/nx-schema.json"
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "defaultBase": "master"
 }

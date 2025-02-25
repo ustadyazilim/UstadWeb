@@ -17,7 +17,8 @@
       "@shared/*": ["shared/src/lib/*"]
     },
     "resolveJsonModule": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true
   },
   "files": [],
   "include": [],

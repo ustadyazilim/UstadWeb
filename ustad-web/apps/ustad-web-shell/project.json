@@ -3,6 +3,7 @@
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "apps/ustad-web-shell",
   "projectType": "application",
+  "tags": [],
   "targets": {
     "build": {
       "executor": "@nx/next:build",
@@ -24,8 +25,7 @@
       "options": {
         "buildTarget": "ustad-web-shell:build",
         "dev": true,
-        "port": 3001,
-        "buildOptions": {}
+        "port": 3001
       },
       "configurations": {
         "development": {
@@ -40,6 +40,5 @@
         }
       }
     }
-  },
-  "tags": []
+  }
 }

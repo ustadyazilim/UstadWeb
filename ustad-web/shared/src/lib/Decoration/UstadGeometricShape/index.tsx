@@ -2,6 +2,7 @@ interface GeometricShapeProps {
   className?: string;
   src: string;
   rotation?: number;
+  blur?: string;
 }
 
 const GeometricShape = ({

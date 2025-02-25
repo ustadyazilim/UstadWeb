@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yesil Defter Portal | Anasayfa</title>
+    <style>
+      /* Global styles */
+      html {
+        -webkit-text-size-adjust: 100%;
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+        line-height: 1.5;
+        tab-size: 4;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        font-family: inherit;
+        line-height: inherit;
+        min-height: 100vh;
+        position: relative;
+      }
+
+      /* Background styles */
+      .background {
+        height: -webkit-fill-available;
+        background: linear-gradient(-180deg, #e0eadf 25%, #eff2ef 64%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+      }
+
+      .background--animated {
+        background-size: 400% 400%;
+        animation: float 15s ease infinite;
+      }
+
+      .background__shapes {
+        position: relative;
+        height: 100%;
+        width: 100vw;
+        overflow: hidden;
+      }
+
+      .background__shape {
+        position: relative;
+        transition: transform 0.6s ease;
+        z-index: 1;
+      }
+
+      .background__shape img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+
+      .background__shapes--1 {
+        position: absolute;
+        top: -32vh;
+        left: 5vw;
+        filter: blur(80px);
+      }
+
+      .background__shapes--2 {
+        position: absolute;
+        top: 64vh;
+        left: 48vw;
+        filter: blur(80px);
+      }
+
+      .background__shapes--3 {
+        position: absolute;
+        top: 228vh;
+        left: -8vw;
+      }
+
+      .background__shape:hover {
+        transform: scale(1.1);
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0) rotate(var(--rotation));
+        }
+        50% {
+          transform: translateY(-20px) rotate(var(--rotation));
+        }
+      }
+
+      /* Main content styles */
+      .main-content {
+        padding-top: 160px;
+        position: relative;
+        z-index: 1;
+      }
+
+      /* Hero styles */
+      .hero {
+        width: 1000px;
+        margin: auto;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 12px;
+        padding: 16px;
+        position: relative;
+        z-index: 1;
+      }
+
+      .hero__container {
+        height: 100%;
+        max-width: 1442px;
+        display: flex;
+        gap: 24px;
+        align-items: center;
+        padding: 16px;
+      }
+
+      .hero__content {
+        flex: 1;
+        height: 100%;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+      }
+
+      .hero__header {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0;
+        position: relative;
+      }
+
+      .hero__header--label {
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #666;
+        position: relative;
+        bottom: 24px;
+        left: 36px;
+      }
+
+      .hero__header--title {
+        font-size: 3rem;
+        line-height: 1.2;
+        font-weight: bold;
+        color: #333;
+      }
+
+      .hero__cta {
+        display: inline-block;
+        padding: 16px 32px;
+        background: #4caf50;
+        color: white;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background 0.3s ease;
+      }
+
+      .hero__cta:hover {
+        background: #45a049;
+      }
+
+      .hero__users {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        border-radius: 24px;
+      }
+
+      .hero__users--text {
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #666;
+      }
+
+      .hero__users--avatars {
+        display: flex;
+        align-items: center;
+        padding: 0;
+      }
+
+      .avatar-group {
+        position: relative;
+        width: 46px;
+        height: 48.65px;
+        margin-right: 16px;
+      }
+
+      .avatar-group__circle {
+        position: absolute;
+        width: 40.69px;
+        height: 40.69px;
+        border-radius: 50%;
+      }
+
+      .avatar-group__circle--red {
+        background: #ff4d4f;
+        top: 12px;
+        left: 5.3px;
+        z-index: 1;
+      }
+
+      .avatar-group__circle--orange {
+        background: #faad14;
+        top: 19.96px;
+        left: 0;
+      }
+
+      .avatar-group__image {
+        position: absolute;
+        width: 38.92px;
+        height: 39.81px;
+        top: 16.42px;
+        left: 3.54px;
+        border-radius: 100px;
+        object-fit: cover;
+        z-index: 2;
+      }
+
+      .hero__image-wrapper {
+        position: relative;
+        width: 1440px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .hero__image {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+
+      /* Traffic Sign Section styles */
+      .section {
+        width: 100%;
+        max-width: 1000px;
+        padding: 180px 0px;
+        margin: auto;
+      }
+
+      .section__container {
+        display: flex;
+        align-items: center;
+      }
+
+      .section__signs {
+        flex: 1;
+        position: relative;
+      }
+
+      .signs__group {
+        display: flex;
+        gap: 32px;
+      }
+
+      .signs__item {
+        position: relative;
+        height: 240px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .signs__item::before {
+        content: '';
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        z-index: 0;
+        transition: transform 0.3s ease;
+      }
+
+      .signs__image {
+        position: relative;
+        z-index: 1;
+        background: transparent;
+        width: 135px;
+        height: 232px;
+      }
+
+      .signs__item--orange::before {
+        background: rgba(255, 152, 0, 0.15);
+        transform: rotate(-15deg) scale(1.2);
+      }
+
+      .signs__item--red::before {
+        background: rgba(255, 77, 79, 0.15);
+        transform: rotate(15deg) scale(1.2);
+      }
+
+      .signs__item--green::before {
+        background: rgba(76, 175, 80, 0.15);
+        transform: rotate(-15deg) scale(1.2);
+      }
+
+      .signs__item:hover::before {
+        transform: scale(1.3);
+      }
+
+      .section__content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+      }
+
+      .section__title {
+        font-size: 2.25rem;
+        font-weight: bold;
+        letter-spacing: -0.025em;
+        color: #333;
+        font-family: 'Helvetica Neue', Arial, sans-serif;
+      }
+
+      .section__description {
+        font-size: 1.125rem;
+        color: #666;
+        line-height: 1.25;
+        letter-spacing: -0.025em;
+        font-family: 'Georgia', serif;
+      }
+
+      @media (max-width: 768px) {
+        .section__container {
+          flex-direction: column;
+          gap: 48px;
+        }
+
+        .section__signs {
+          width: 100%;
+        }
+
+        .section__content {
+          text-align: center;
+          align-items: center;
+        }
+      }
+
+      /* Section styles */
+      section {
+        margin: 2rem auto;
+        max-width: 1200px;
+        padding: 2rem;
+      }
+
+      /* Integration Solutions styles */
+      .solutions {
+        padding: 64px 0;
+      }
+
+      .solutions__title {
+        font-size: 3.75rem;
+        font-weight: bold;
+        line-height: 1.5;
+        letter-spacing: -0.025em;
+        color: #333;
+        margin-bottom: 64px;
+        text-align: center;
+      }
+
+      .solutions__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 48px;
+        margin: 0 auto;
+        padding: 0 48px;
+      }
+
+      .solution {
+        border-radius: 12px;
+        height: 420px;
+        width: 300px;
+        margin: auto;
+        transition: all 0.3s ease;
+        opacity: 0;
+        animation: fadeInUp 0.6s ease forwards;
+      }
+
+      .solution:hover {
+        transform: translateY(-6px);
+      }
+
+      .solution:nth-child(odd) {
+        background: #1a1a1a;
+      }
+
+      .solution:nth-child(odd) .solution__title {
+        color: #fff;
+      }
+
+      .solution:nth-child(even) {
+        background: #fff;
+      }
+
+      .solution:nth-child(even) .solution__title {
+        color: #333;
+      }
+
+      .solution__content {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 16px;
+      }
+
+      .solution__image {
+        aspect-ratio: 16/9;
+        overflow: hidden;
+        border-radius: 8px;
+      }
+
+      .solution__image img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+
+      .solution__info {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      .solution__title {
+        font-size: 2.25rem;
+        font-weight: 500;
+        font-family: 'Georgia', serif;
+        letter-spacing: -0.025em;
+        line-height: 1.5;
+      }
+
+      .solution__button {
+        width: 100%;
+        padding: 12px 24px;
+        background: transparent;
+        border: 2px solid currentColor;
+        border-radius: 8px;
+        color: inherit;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .solution__button:hover {
+        background: rgba(255, 255, 255, 0.1);
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .solution:nth-child(1) {
+        animation-delay: 0.1s;
+      }
+      .solution:nth-child(2) {
+        animation-delay: 0.2s;
+      }
+      .solution:nth-child(3) {
+        animation-delay: 0.3s;
+      }
+      .solution:nth-child(4) {
+        animation-delay: 0.4s;
+      }
+      .solution:nth-child(5) {
+        animation-delay: 0.5s;
+      }
+      .solution:nth-child(6) {
+        animation-delay: 0.6s;
+      }
+
+      @media (max-width: 768px) {
+        .solutions__grid {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 20px;
+          padding: 0 24px;
+        }
+
+        .solution {
+          height: 385px;
+          width: 275px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .solutions__grid {
+          grid-template-columns: 1fr;
+          gap: 16px;
+          padding: 0 16px;
+        }
+
+        .solution {
+          height: 350px;
+          width: 250px;
+        }
+      }
+
+      /* Why Yesildefter styles */
+      .why {
+        width: 100%;
+        margin: 180px auto;
+        padding: 16px;
+      }
+
+      .why__content {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 16px;
+      }
+
+      .why__title {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 32px 0;
+        font-size: 64px;
+        font-weight: bold;
+        line-height: 1.2;
+        color: #333;
+      }
+
+      .why__highlight {
+        color: #295c00;
+        font-family: system-ui, -apple-system, sans-serif;
+        font-weight: 800;
+      }
+
+      .why__description {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        font-size: 1.125rem;
+        line-height: 1.5;
+        color: #1a1a1a;
+        max-width: 560px;
+      }
+
+      .why__description p {
+        margin: 0;
+        padding: 0;
+      }
+
+      @media (max-width: 768px) {
+        .why {
+          padding: 32px;
+        }
+
+        .why__title {
+          font-size: 48px;
+        }
+
+        .why__description {
+          font-size: 24px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .why {
+          padding: 24px;
+        }
+
+        .why__title {
+          font-size: 36px;
+        }
+
+        .why__description {
+          font-size: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Background Component -->
+    <div class="background background--animated">
+      <div class="background__shapes">
+        <div class="background__shapes--1 background__shape">
+          <img src="/images/shapes/shape1.svg" alt="Geometric Shape 1" />
+        </div>
+        <div class="background__shapes--2 background__shape">
+          <img src="/images/shapes/shape2.svg" alt="Geometric Shape 2" />
+        </div>
+        <div class="background__shapes--3 background__shape">
+          <img src="/images/shapes/shape3.svg" alt="Geometric Shape 3" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero__container">
+          <div class="hero__content">
+            <div class="hero__header">
+              <span class="hero__header--label">
+                It's Easy to Get Your Driver's License
+              </span>
+              <h1 class="hero__header--title">yesiLdefter</h1>
+            </div>
+
+            <a href="#" class="hero__cta">
+              Get started & Join the trusted community of Driver Schools
+            </a>
+
+            <div class="hero__users">
+              <p class="hero__users--text">
+                Join thousands of successful drivers who got their license
+                through our platform
+              </p>
+              <div class="hero__users--avatars">
+                <div class="avatar-group">
+                  <div
+                    class="avatar-group__circle avatar-group__circle--red"
+                  ></div>
+                  <div
+                    class="avatar-group__circle avatar-group__circle--orange"
+                  ></div>
+                  <img
+                    src="/images/avatars/avatar1.png"
+                    alt="User 1"
+                    class="avatar-group__image"
+                  />
+                </div>
+                <div class="avatar-group">
+                  <div
+                    class="avatar-group__circle avatar-group__circle--red"
+                  ></div>
+                  <div
+                    class="avatar-group__circle avatar-group__circle--orange"
+                  ></div>
+                  <img
+                    src="/images/avatars/avatar2.png"
+                    alt="User 2"
+                    class="avatar-group__image"
+                  />
+                </div>
+                <div class="avatar-group">
+                  <div
+                    class="avatar-group__circle avatar-group__circle--red"
+                  ></div>
+                  <div
+                    class="avatar-group__circle avatar-group__circle--orange"
+                  ></div>
+                  <img
+                    src="/images/avatars/avatar3.png"
+                    alt="User 3"
+                    class="avatar-group__image"
+                  />
+                </div>
+                <div class="avatar-group">
+                  <div
+                    class="avatar-group__circle avatar-group__circle--red"
+                  ></div>
+                  <div
+                    class="avatar-group__circle avatar-group__circle--orange"
+                  ></div>
+                  <img
+                    src="/images/avatars/avatar4.png"
+                    alt="User 4"
+                    class="avatar-group__image"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__image-wrapper">
+            <img
+              src="/images/illustrations/hero-illustration.svg"
+              alt="Hero illustration"
+              class="hero__image"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Traffic Sign Section -->
+      <section class="section">
+        <div class="section__container">
+          <div class="section__signs">
+            <div class="signs__group">
+              <div class="signs__item signs__item--orange">
+                <img
+                  src="/images/traffic-signs/sign-1.svg"
+                  alt="Traffic Sign"
+                  class="signs__image"
+                />
+              </div>
+              <div class="signs__item signs__item--red">
+                <img
+                  src="/images/traffic-signs/sign-2.svg"
+                  alt="Traffic Sign"
+                  class="signs__image"
+                />
+              </div>
+              <div class="signs__item signs__item--green">
+                <img
+                  src="/images/traffic-signs/sign-3.svg"
+                  alt="Traffic Sign"
+                  class="signs__image"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="section__content">
+            <h2 class="section__title">Learn Traffic Signs</h2>
+            <p class="section__description">
+              Master all traffic signs with our comprehensive guide and
+              interactive learning tools
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Integration Solutions Section -->
+      <section class="solutions">
+        <h2 class="solutions__title">Entegrasyon Çözümlerimiz</h2>
+
+        <div class="solutions__grid">
+          <div class="solution">
+            <div class="solution__content">
+              <div class="solution__image">
+                <img src="/images/solutions/e-fatura.svg" alt="E Fatura" />
+              </div>
+              <div class="solution__info">
+                <h3 class="solution__title">E Fatura</h3>
+                <button class="solution__button">
+                  Dokümantasyonu Keşfedin
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="solution">
+            <div class="solution__content">
+              <div class="solution__image">
+                <img src="/images/solutions/sanal-pos.svg" alt="Sanal Pos" />
+              </div>
+              <div class="solution__info">
+                <h3 class="solution__title">Sanal Pos</h3>
+                <button class="solution__button">
+                  Dokümantasyonu Keşfedin
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="solution">
+            <div class="solution__content">
+              <div class="solution__image">
+                <img src="/images/solutions/sms.svg" alt="SMS" />
+              </div>
+              <div class="solution__info">
+                <h3 class="solution__title">SMS</h3>
+                <button class="solution__button">
+                  Dokümantasyonu Keşfedin
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="solution">
+            <div class="solution__content">
+              <div class="solution__image">
+                <img
+                  src="/images/solutions/uzaktan-erisim.svg"
+                  alt="Uzaktan Erisim"
+                />
+              </div>
+              <div class="solution__info">
+                <h3 class="solution__title">Uzaktan Erisim</h3>
+                <button class="solution__button">
+                  Dokümantasyonu Keşfedin
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="solution">
+            <div class="solution__content">
+              <div class="solution__image">
+                <img
+                  src="/images/solutions/sinirsiz-kullanici.svg"
+                  alt="Sinirsiz Kullanici"
+                />
+              </div>
+              <div class="solution__info">
+                <h3 class="solution__title">Sinirsiz Kullanici</h3>
+                <button class="solution__button">
+                  Dokümantasyonu Keşfedin
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="solution">
+            <div class="solution__content">
+              <div class="solution__image">
+                <img
+                  src="/images/solutions/guvenli-yedekleme.svg"
+                  alt="Guvenli Yedekleme"
+                />
+              </div>
+              <div class="solution__info">
+                <h3 class="solution__title">Guvenli Yedekleme</h3>
+                <button class="solution__button">
+                  Dokümantasyonu Keşfedin
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Yesildefter Section -->
+      <section class="why">
+        <div class="why__content">
+          <h2 class="why__title">
+            Neden <span class="why__highlight">yesiLdefter</span> ?
+          </h2>
+          <div class="why__description">
+            <p>İşletmenizi yönetmenin en kolay ve basit yolu.</p>
+            <p>
+              Artık işletmenizdeki işlerinizi hızlı, verimli ve her yerden
+              yönetebilirsiniz.
+            </p>
+            <p>
+              Güvenilir ve etkili çözümlerimizle süreci daha kolay hale getirin.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

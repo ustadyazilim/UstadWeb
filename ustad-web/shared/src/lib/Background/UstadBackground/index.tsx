@@ -1,7 +1,9 @@
-import styles from '../../../styles/UstadBackground.module.scss';
+/** Core Imports */
 import { UstadGeometricShape } from '../../Decoration';
-
-interface UstadBackgroundProps {
+/** Style Imports */
+import styles from '../../../styles/UstadBackground.module.scss';
+/** Props Interface */
+export interface UstadBackgroundProps {
   animated?: boolean;
 }
 
