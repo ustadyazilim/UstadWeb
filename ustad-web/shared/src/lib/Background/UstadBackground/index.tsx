@@ -16,22 +16,16 @@ const UstadBackground = ({ animated = false }: UstadBackgroundProps) => {
     >
       <div className={styles['background__shapes']}>
         <UstadGeometricShape
-          className={styles['background__shape--1']}
-          color="#295E00"
-          rotation={-37.5}
-          blur="true"
+          className={`${styles['background__shapes--1']} ${styles['background__shape']}`}
+          src="/images/shapes/shape1.svg"
         />
         <UstadGeometricShape
-          className={styles['background__shape--2']}
-          color="#FF9914"
-          rotation={45}
-          blur="true"
+          className={`${styles['background__shapes--2']} ${styles['background__shape']}`}
+          src="/images/shapes/shape2.svg"
         />
         <UstadGeometricShape
-          className={styles['background__shape--3']}
-          color="#F31B3F"
-          rotation={15.5}
-          blur="true"
+          className={`${styles['background__shapes--3']} ${styles['background__shape']}`}
+          src="/images/shapes/shape3.svg"
         />
       </div>
     </div>

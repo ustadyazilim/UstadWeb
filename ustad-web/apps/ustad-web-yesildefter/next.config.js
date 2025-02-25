@@ -3,11 +3,30 @@ const { composePlugins, withNx } = require('@nx/next');
 const createMDX = require('@next/mdx');
 
 const nextConfig = {
-  transpilePackages: ['shared'],
+  transpilePackages: [
+    'three',
+    '@react-three/fiber',
+    '@react-three/drei',
+    'three-custom-shader-material',
+    'shared',
+  ],
   pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
   webpack: (config, { isServer }) => {
     config.resolve.alias = {
       ...config.resolve.alias,
+      three: path.resolve(__dirname, '../../node_modules/three'),
+      '@react-three/fiber': path.resolve(
+        __dirname,
+        '../../node_modules/@react-three/fiber'
+      ),
+      '@react-three/drei': path.resolve(
+        __dirname,
+        '../../node_modules/@react-three/drei'
+      ),
+      'react-three-fiber': path.resolve(
+        __dirname,
+        '../../node_modules/@react-three/fiber'
+      ),
       '@shared': path.resolve(__dirname, '../../shared/src/lib'),
       '@ustad-web-chatbot': path.resolve(
         __dirname,
@@ -18,6 +37,16 @@ const nextConfig = {
         '../../apps/ustad-web-esinav/src'
       ),
     };
+
+    // Ensure proper resolution of Three.js modules
+    config.resolve.extensions = [
+      ...config.resolve.extensions,
+      '.ts',
+      '.tsx',
+      '.js',
+      '.jsx',
+    ];
+    config.resolve.mainFields = ['browser', 'module', 'main'];
 
     const rules = config.module.rules
       .find((rule) => typeof rule.oneOf === 'object')
@@ -35,8 +64,14 @@ const nextConfig = {
     });
 
     if (!isServer) {
-      config.resolve.fallback = { fs: false };
+      config.resolve.fallback = {
+        fs: false,
+        path: false,
+        os: false,
+        crypto: false,
+      };
     }
+
     return config;
   },
   async rewrites() {
@@ -95,7 +130,7 @@ const withMDX = createMDX({
   options: {
     jsx: true,
     mdxRs: false,
-    providerImportSource: "@mdx-js/react",
+    providerImportSource: '@mdx-js/react',
   },
 });
 const plugins = [withNx, withMDX];

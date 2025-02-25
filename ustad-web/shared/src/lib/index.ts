@@ -1,9 +1,9 @@
+/** Auth Provider */
+export { AuthProvider } from './auth/AuthContext';
 /** Layout Components */
 export { default as UstadHeader } from './Header/UstadHeader';
 export { default as UstadFooter } from './Footer/UstadFooter';
 export { default as UstadLayout } from './Layout/UstadLayout';
-/** Auth Components */
-export { AuthProvider } from './auth/AuthContext';
 /** Atom Components */
 export { default as UstadMDX } from './MDX/UstadMDX';
 export { default as UstadButton } from './Button/UstadButton';
