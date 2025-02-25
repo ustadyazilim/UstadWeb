@@ -34,6 +34,11 @@
       "answer1": "Click on 'Get Started for Free' and follow the instructions.",
       "question2": "What documents do I need?",
       "answer2": "You will need your ID and proof of residence."
+    },
+    "hero": {
+      "header": {
+        "label": "Remember"
+      }
     }
   }
 }

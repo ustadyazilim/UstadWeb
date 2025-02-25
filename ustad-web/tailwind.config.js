@@ -40,13 +40,6 @@ module.exports = {
     {
       pattern: /cursor-pointer/,
     },
-    {
-      pattern:
-        /focus:(outline-none|border-transparent|ring-4|ring-blue-300|ring-blue-800)/,
-    },
-    {
-      pattern: /dark:(text-gray-400|focus:ring-blue-800)/,
-    },
   ],
   theme: {
     extend: {},

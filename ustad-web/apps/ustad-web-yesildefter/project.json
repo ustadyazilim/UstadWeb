@@ -3,6 +3,7 @@
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "apps/ustad-web-yesildefter",
   "projectType": "application",
+  "tags": [],
   "targets": {
     "build": {
       "executor": "@nx/next:build",
@@ -29,16 +30,13 @@
       "configurations": {
         "development": {
           "buildTarget": "ustad-web-yesildefter:build:development",
-          "dev": true,
-          "buildOptions": {}
+          "dev": true
         },
         "production": {
           "buildTarget": "ustad-web-yesildefter:build:production",
-          "dev": false,
-          "buildOptions": {}
+          "dev": false
         }
       }
     }
-  },
-  "tags": []
+  }
 }

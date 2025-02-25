@@ -1,6 +1,11 @@
+'use client';
+
 /** Core Imports */
+import { Suspense } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { getDictionary } from '../../../language/get-dictionary';
+import dynamic from 'next/dynamic';
 
 /** Type Imports */
 import type { Locale } from '../../../language/i18n-config';
@@ -17,17 +22,12 @@ export interface UstadHeroProps {
 }
 
 const UstadHero = ({ params }: UstadHeroProps) => {
+  const { lang } = params;
+
   return (
     <div className={styles['hero']}>
       <div className={styles['hero__container']}>
         <div className={styles['hero__content']}>
-          <div className={styles['hero__header']}>
-            <span className={styles['hero__header--label']}>
-              It's Easy to Get Your Driver's License
-            </span>
-            <h1 className={styles['hero__header--title']}>yesiLdefter</h1>
-          </div>
-
           <UstadButton variant="cta" className={styles['hero__cta']}>
             Get started & Join the trusted community of Driver Schools
           </UstadButton>

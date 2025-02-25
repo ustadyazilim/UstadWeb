@@ -1,0 +1,21 @@
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+self["webpackHotUpdate_N_E"]("app/layout",{
+
+/***/ "(app-pages-browser)/../../shared/src/styles/UstadBackground.module.scss":
+/*!***********************************************************!*\
+  !*** ../../shared/src/styles/UstadBackground.module.scss ***!
+  \***********************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+eval(__webpack_require__.ts("// extracted by mini-css-extract-plugin\nmodule.exports = {\"background\":\"UstadBackground_background__69izA\",\"background--animated\":\"UstadBackground_background--animated__gnGxD\",\"background__shapes\":\"UstadBackground_background__shapes__NWw4K\",\"background__shapes--1\":\"UstadBackground_background__shapes--1__ZvrOm\",\"float\":\"UstadBackground_float__8IvK8\",\"background__shapes--2\":\"UstadBackground_background__shapes--2__oBD7P\",\"background__shapes--3\":\"UstadBackground_background__shapes--3__bJqNs\",\"background__shape\":\"UstadBackground_background__shape__a_Q_T\"};\n    if(true) {\n      // 1740147273973\n      var cssReload = __webpack_require__(/*! ../../node_modules/next/dist/compiled/mini-css-extract-plugin/hmr/hotModuleReplacement.js */ \"(app-pages-browser)/../../node_modules/next/dist/compiled/mini-css-extract-plugin/hmr/hotModuleReplacement.js\")(module.id, {\"publicPath\":\"/_next/\",\"esModule\":false,\"locals\":true});\n      module.hot.dispose(cssReload);\n      \n    }\n  \nmodule.exports.__checksum = \"5ccaae8972cc\"\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwcC1wYWdlcy1icm93c2VyKS8uLi8uLi9zaGFyZWQvc3JjL3N0eWxlcy9Vc3RhZEJhY2tncm91bmQubW9kdWxlLnNjc3MiLCJtYXBwaW5ncyI6IkFBQUE7QUFDQSxrQkFBa0I7QUFDbEIsT0FBTyxJQUFVO0FBQ2pCO0FBQ0Esc0JBQXNCLG1CQUFPLENBQUMsZ05BQTBKLGNBQWMsc0RBQXNEO0FBQzVQLE1BQU0sVUFBVTtBQUNoQjtBQUNBO0FBQ0E7QUFDQSx5QkFBeUIiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9fTl9FLy4uLy4uL3NoYXJlZC9zcmMvc3R5bGVzL1VzdGFkQmFja2dyb3VuZC5tb2R1bGUuc2Nzcz9lNGQzIl0sInNvdXJjZXNDb250ZW50IjpbIi8vIGV4dHJhY3RlZCBieSBtaW5pLWNzcy1leHRyYWN0LXBsdWdpblxubW9kdWxlLmV4cG9ydHMgPSB7XCJiYWNrZ3JvdW5kXCI6XCJVc3RhZEJhY2tncm91bmRfYmFja2dyb3VuZF9fNjlpekFcIixcImJhY2tncm91bmQtLWFuaW1hdGVkXCI6XCJVc3RhZEJhY2tncm91bmRfYmFja2dyb3VuZC0tYW5pbWF0ZWRfX2duR3hEXCIsXCJiYWNrZ3JvdW5kX19zaGFwZXNcIjpcIlVzdGFkQmFja2dyb3VuZF9iYWNrZ3JvdW5kX19zaGFwZXNfX05XdzRLXCIsXCJiYWNrZ3JvdW5kX19zaGFwZXMtLTFcIjpcIlVzdGFkQmFja2dyb3VuZF9iYWNrZ3JvdW5kX19zaGFwZXMtLTFfX1p2ck9tXCIsXCJmbG9hdFwiOlwiVXN0YWRCYWNrZ3JvdW5kX2Zsb2F0X184SXZLOFwiLFwiYmFja2dyb3VuZF9fc2hhcGVzLS0yXCI6XCJVc3RhZEJhY2tncm91bmRfYmFja2dyb3VuZF9fc2hhcGVzLS0yX19vQkQ3UFwiLFwiYmFja2dyb3VuZF9fc2hhcGVzLS0zXCI6XCJVc3RhZEJhY2tncm91bmRfYmFja2dyb3VuZF9fc2hhcGVzLS0zX19iSnFOc1wiLFwiYmFja2dyb3VuZF9fc2hhcGVcIjpcIlVzdGFkQmFja2dyb3VuZF9iYWNrZ3JvdW5kX19zaGFwZV9fYV9RX1RcIn07XG4gICAgaWYobW9kdWxlLmhvdCkge1xuICAgICAgLy8gMTc0MDE0NzI3Mzk3M1xuICAgICAgdmFyIGNzc1JlbG9hZCA9IHJlcXVpcmUoXCIvVXNlcnMvamFuYmVya3VjYXIvRGVza3RvcC9Db2RlYmFzZS9Vc3RhZFNvZnR3YXJlL1VzdGFkV2ViL3VzdGFkLXdlYi9ub2RlX21vZHVsZXMvbmV4dC9kaXN0L2NvbXBpbGVkL21pbmktY3NzLWV4dHJhY3QtcGx1Z2luL2htci9ob3RNb2R1bGVSZXBsYWNlbWVudC5qc1wiKShtb2R1bGUuaWQsIHtcInB1YmxpY1BhdGhcIjpcIi9fbmV4dC9cIixcImVzTW9kdWxlXCI6ZmFsc2UsXCJsb2NhbHNcIjp0cnVlfSk7XG4gICAgICBtb2R1bGUuaG90LmRpc3Bvc2UoY3NzUmVsb2FkKTtcbiAgICAgIFxuICAgIH1cbiAgXG5tb2R1bGUuZXhwb3J0cy5fX2NoZWNrc3VtID0gXCI1Y2NhYWU4OTcyY2NcIlxuIl0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(app-pages-browser)/../../shared/src/styles/UstadBackground.module.scss\n"));
+
+/***/ })
+
+});

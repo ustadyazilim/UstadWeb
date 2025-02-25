@@ -1,0 +1,1376 @@
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../../node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!../../node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!../../node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!../../node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!../../shared/src/styles/UstadCard.module.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+.UstadCard_card__Rqbn_ {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  transition: transform 0.2s ease;
+}
+.UstadCard_card__Rqbn_:hover {
+  transform: translateY(-4px);
+}
+.UstadCard_card__icon__F_H4n {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.UstadCard_card__icon--primary__nh_wQ {
+  background: #29590f;
+  color: #ffffff;
+}
+.UstadCard_card__icon--secondary__QKaeP {
+  background: #ff9914;
+  color: #ffffff;
+}
+.UstadCard_card__title__adcg_ {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #231b3b;
+}
+.UstadCard_card__description__Lka_k {
+  font-size: 1rem;
+  color: rgba(35, 27, 59, 0.7);
+  line-height: 1.6;
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../../node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!../../node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!../../node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!../../node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!../../shared/src/styles/UstadDecorations.module.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+.UstadDecorations_decorations__qm0Dw {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.UstadDecorations_decorations__shape__KLAyq {
+  position: absolute;
+  transform: rotate(var(--rotation, 0deg));
+  animation: UstadDecorations_float__i0Yh4 6s ease-in-out infinite;
+  animation-delay: var(--delay);
+}
+
+.UstadDecorations_decorations__shape__016__gvNks {
+  top: 0px;
+  left: 28.744px;
+  scale: 0.8;
+}
+
+.UstadDecorations_decorations__shape__017__3EdZH {
+  bottom: 109px;
+  right: 236.28px;
+  scale: 0.8;
+}
+
+.UstadDecorations_decorations__shape__014__FQJNl {
+  bottom: 834.8px;
+  left: 1305.06px;
+  scale: 0.8;
+}
+
+@keyframes UstadDecorations_float__i0Yh4 {
+  0%, 100% {
+    transform: translateY(0) rotate(var(--rotation)) scale(0.75);
+  }
+  50% {
+    transform: translateY(-20px) rotate(var(--rotation)) scale(0.8);
+  }
+}
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../../node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!../../node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!../../node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!../../node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!../../shared/src/styles/UstadHeader.module.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+.UstadHeader_header-cta__Z1Oti {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.UstadHeader_header-nav__md6tF {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+}
+
+.UstadHeader_hero-title__eDzY9 {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 6rem;
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+}
+
+.UstadHeader_section-title__wyI9N {
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.UstadHeader_description__Xc_bq {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.UstadHeader_feature-title__7tJsw {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.44;
+  letter-spacing: -0.02em;
+}
+
+.UstadHeader_yesiLdefter-title__oYrj9 {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+}
+
+.UstadHeader_body__GvjNL {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.UstadHeader_typography-cta__C4H2N {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+.UstadHeader_typography-nav__WsCNT {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+}
+.UstadHeader_typography-title-main__WaKbz {
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+.UstadHeader_typography-description-bold___jpHu {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.UstadHeader_header__mNMlR {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+  height: 80px;
+  padding: 24px 48px;
+  background: transparent;
+}
+.UstadHeader_header__container__luRfH {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.UstadHeader_header__logo__Pdyk3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fafafa;
+  text-decoration: none;
+}
+.UstadHeader_header__nav__7eky1 {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 32px;
+}
+.UstadHeader_header__nav__7eky1 .UstadHeader_nav__item__ULZae {
+  color: #fafafa;
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  padding: 12px 16px;
+}
+.UstadHeader_header__nav__7eky1 .UstadHeader_nav__item__ULZae:hover {
+  color: #ff9914;
+}
+.UstadHeader_header__actions__UbcsP {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 1.5rem;
+}
+.UstadHeader_header__actions__UbcsP .UstadHeader_avatar__aYF3x {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.UstadHeader_header__actions__UbcsP .UstadHeader_avatar__aYF3x img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.UstadHeader_header__actions__UbcsP .UstadHeader_avatar__aYF3x:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 1240px) {
+  .UstadHeader_header__mNMlR {
+    padding: 1rem 1.25rem;
+  }
+  .UstadHeader_header__container__luRfH {
+    padding: 0;
+    justify-content: space-between;
+  }
+  .UstadHeader_header__nav__7eky1 {
+    display: none;
+  }
+  .UstadHeader_header__actions__UbcsP .UstadHeader_get-started__2YPfQ,
+  .UstadHeader_header__actions__UbcsP .UstadHeader_exit-button__C6ii6 {
+    display: none;
+  }
+  .UstadHeader_header__mNMlR .UstadHeader_header__mobile___3HpD {
+    display: block;
+    /* Add styles for mobile menu icon if needed */
+  }
+}
+.UstadHeader_footer__HeZc7 {
+  background-color: #070606;
+  color: #c4c4c4;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.UstadHeader_footer__text__HfNjA {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.UstadHeader_nav__item__ULZae {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+}
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../../node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!../../node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!../../node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!../../node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!../../shared/src/styles/UstadButton.module.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+.UstadButton_button__Gtd43 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 62px;
+  padding: 1rem 1.25rem;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+  border: 1px solid rgb(18, 17, 19);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: -moz-fit-content;
+  width: fit-content;
+  gap: 0.75rem;
+}
+.UstadButton_button--full-width__CvZg7 {
+  width: 100%;
+  min-width: 423px;
+}
+.UstadButton_button--cta__xTJ15, .UstadButton_button--primary__I138B {
+  background: #29590f;
+  color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 5px 0px rgb(10, 10, 10);
+}
+.UstadButton_button--cta__xTJ15:hover, .UstadButton_button--primary__I138B:hover {
+  transform: translateY(-2px);
+}
+.UstadButton_button--cta__xTJ15:active, .UstadButton_button--primary__I138B:active {
+  transform: translateY(2px);
+}
+.UstadButton_button--secondary__xMaXD {
+  background: #ffffff;
+  color: #121114;
+  border-radius: 20px;
+  box-shadow: 0px 5px 0px rgb(189, 183, 164);
+}
+.UstadButton_button--text__PXORj {
+  background: transparent;
+  border: none;
+  color: #fafafa;
+  box-shadow: none;
+  padding: 0.75rem 1rem;
+  height: auto;
+}
+.UstadButton_button--text__PXORj:hover {
+  color: #29590f;
+}
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../../node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!../../node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!../../node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!../../node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!../../shared/src/styles/UstadLayout.module.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+.UstadLayout_layout__MAc53 {
+  min-height: 100vh;
+  overflow: auto;
+}
+.UstadLayout_layout__main__XdFIK {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 2rem 0;
+}
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../../node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!../../node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!../../node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!../../node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!../../shared/src/styles/UstadFooter.module.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+.UstadFooter_footer__ArD6J {
+  width: 100%;
+  background-color: #0a0a0a;
+  padding: 24px;
+  color: #fafafa;
+}
+.UstadFooter_footer__container__kTD_V {
+  max-width: 1344px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.UstadFooter_footer__content__w9tyo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.UstadFooter_footer__column__iN3iN {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.UstadFooter_footer__links__Iv2__ {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+.UstadFooter_footer__link__RNoYW {
+  font-size: 0.875rem;
+  color: #fafafa;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.UstadFooter_footer__link__RNoYW:hover {
+  color: #fafafa;
+}
+.UstadFooter_footer__copyright__iSeLH {
+  font-size: 1.125rem;
+  color: #fafafa;
+  margin-top: 24px;
+}
+
+@media (max-width: 1240px) {
+  .UstadFooter_footer__content__w9tyo {
+    grid-template-columns: 1fr;
+  }
+  .UstadFooter_footer__links__Iv2__ {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../../node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!../../node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!../../node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!../../node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!../../shared/src/styles/UstadLink.module.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+.UstadLink_link__LAGoH {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #231b3b;
+  transition: all 0.2s ease;
+}
+.UstadLink_link__LAGoH:hover {
+  opacity: 0.8;
+  transform: translateY(-2px);
+}
+.UstadLink_link__icon__oinBu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.UstadLink_link__icon__oinBu img {
+  width: auto;
+  height: 40px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  filter: grayscale(1);
+  opacity: 0.7;
+  transition: all 0.2s ease;
+}
+.UstadLink_link__icon__oinBu:hover img {
+  filter: grayscale(0);
+  opacity: 1;
+}
+
+@media (max-width: 640px) {
+  .UstadLink_link__icon__oinBu img {
+    height: 32px;
+  }
+}
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../../node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!../../node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!../../node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!../../node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!../../shared/src/styles/UstadCTA.module.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+.UstadCTA_header-cta__naMvo {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.UstadCTA_header-nav__AlbLQ {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+}
+
+.UstadCTA_hero-title__mEaIm {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 6rem;
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+}
+
+.UstadCTA_section-title__VtJFb {
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.UstadCTA_description__B4ZGj {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.UstadCTA_feature-title__0nV4V {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.44;
+  letter-spacing: -0.02em;
+}
+
+.UstadCTA_yesiLdefter-title__63E9H {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+}
+
+.UstadCTA_body__uOREA {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.UstadCTA_typography-cta__jvjIr {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+.UstadCTA_typography-nav__3Ffkd {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+}
+.UstadCTA_typography-title-main__u_ihj {
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+.UstadCTA_typography-description-bold__TFoJD {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.UstadCTA_cta__uY1Ij {
+  position: relative;
+  width: 100%;
+  max-width: 1280px;
+  margin: 120px auto;
+  padding: 0 24px;
+  overflow: hidden;
+}
+.UstadCTA_cta__content__6Uoar {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+}
+.UstadCTA_cta__title__RlXPG {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #231b3b;
+}
+.UstadCTA_cta__decorations__GQzjy {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+.UstadCTA_cta__button__lQ9nh {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.UstadCTA_title__highlight__KiJKp {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+.UstadCTA_title__highlight--text__NdAE6 {
+  position: relative;
+  z-index: 1;
+  color: #29590f;
+}
+.UstadCTA_title__highlight--decoration__y_7t_ {
+  position: absolute;
+  left: -20px;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.UstadCTA_title__highlight--decoration__y_7t_ img {
+  width: 100%;
+  height: auto;
+}
+
+.UstadCTA_decorations__item__QkkzN {
+  position: absolute;
+  opacity: 0.1;
+}
+.UstadCTA_decorations__item__QkkzN img {
+  width: 100%;
+  height: auto;
+}
+.UstadCTA_decorations__item__QkkzN:nth-child(1) {
+  top: -60px;
+  left: 5%;
+  width: 240px;
+  transform: rotate(-15deg);
+}
+.UstadCTA_decorations__item__QkkzN:nth-child(2) {
+  top: 20%;
+  right: 10%;
+  width: 180px;
+  transform: rotate(10deg);
+}
+.UstadCTA_decorations__item__QkkzN:nth-child(3) {
+  bottom: -40px;
+  left: 15%;
+  width: 200px;
+  transform: rotate(5deg);
+}
+.UstadCTA_decorations__item__QkkzN:nth-child(4) {
+  bottom: 10%;
+  right: 5%;
+  width: 160px;
+  transform: rotate(-8deg);
+}
+
+@keyframes UstadCTA_float__sWr56 {
+  0%, 100% {
+    transform: translateY(0) rotate(var(--rotation));
+  }
+  50% {
+    transform: translateY(-20px) rotate(var(--rotation));
+  }
+}
+.UstadCTA_decorations__item__QkkzN {
+  animation: UstadCTA_float__sWr56 6s ease-in-out infinite;
+}
+.UstadCTA_decorations__item__QkkzN:nth-child(1) {
+  --rotation: -15deg;
+  animation-delay: 0s;
+}
+.UstadCTA_decorations__item__QkkzN:nth-child(2) {
+  --rotation: 10deg;
+  animation-delay: -1.5s;
+}
+.UstadCTA_decorations__item__QkkzN:nth-child(3) {
+  --rotation: 5deg;
+  animation-delay: -3s;
+}
+.UstadCTA_decorations__item__QkkzN:nth-child(4) {
+  --rotation: -8deg;
+  animation-delay: -4.5s;
+}
+
+@media (max-width: 1240px) {
+  .UstadCTA_cta__uY1Ij {
+    margin: 80px auto;
+  }
+  .UstadCTA_cta__title__RlXPG {
+    font-size: 36px;
+  }
+  .UstadCTA_decorations__item__QkkzN:nth-child(1) {
+    width: 180px;
+  }
+  .UstadCTA_decorations__item__QkkzN:nth-child(2) {
+    width: 140px;
+  }
+  .UstadCTA_decorations__item__QkkzN:nth-child(3) {
+    width: 160px;
+  }
+  .UstadCTA_decorations__item__QkkzN:nth-child(4) {
+    width: 120px;
+  }
+}
+@media (max-width: 640px) {
+  .UstadCTA_cta__uY1Ij {
+    margin: 60px auto;
+    padding: 0 16px;
+  }
+  .UstadCTA_cta__title__RlXPG {
+    font-size: 28px;
+  }
+  .UstadCTA_cta__button__lQ9nh {
+    width: 100%;
+  }
+}
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../../node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!../../node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!../../node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!../../node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!../../shared/src/styles/UstadHero.module.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+.UstadHero_header-cta__t1m1x {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.UstadHero_header-nav__ZZ4SP {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+}
+
+.UstadHero_hero-title__2meZq {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 6rem;
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+}
+
+.UstadHero_section-title__r0IzI {
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.UstadHero_description__sCzGh {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.UstadHero_feature-title__bJKRw {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.44;
+  letter-spacing: -0.02em;
+}
+
+.UstadHero_yesiLdefter-title__MtqlC {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+}
+
+.UstadHero_body__gPhet {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.UstadHero_typography-cta__r5m_V {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+.UstadHero_typography-nav__eAQ6Q {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+}
+.UstadHero_typography-title-main__lLDgZ {
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+.UstadHero_typography-description-bold__3CLDY {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.UstadHero_hero__EOKNQ {
+  width: 1000px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 36px;
+  padding: 0.75rem;
+  position: relative;
+  z-index: 1;
+}
+.UstadHero_hero__container__w8rcZ {
+  height: 100%;
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  padding: 1rem;
+}
+.UstadHero_hero__content__wbC6M {
+  flex: 1;
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.UstadHero_hero__header__4d7CR {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 0;
+  position: relative;
+}
+.UstadHero_hero__header--label__xBi03 {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: rgba(35, 27, 59, 0.7);
+  position: relative;
+  bottom: 24px;
+  left: 36px;
+}
+.UstadHero_hero__header--title__xUJZv {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 6rem;
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+  color: #231b3b;
+}
+.UstadHero_hero__users__9jdNo {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  border-radius: 24px;
+}
+.UstadHero_hero__users--text__UaLOq {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: rgba(35, 27, 59, 0.7);
+}
+.UstadHero_hero__users--avatars__i9Iwt {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+.UstadHero_hero__image-wrapper___IJji {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.UstadHero_hero__image__fXgr1 {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.UstadHero_hero__description__mcFA7 {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: rgba(35, 27, 59, 0.7);
+}
+
+.UstadHero_avatar-group__Lrda_ {
+  position: relative;
+  width: 46px;
+  height: 48.65px;
+  margin-right: 1rem;
+}
+.UstadHero_avatar-group__circle__XRmDC {
+  position: absolute;
+  width: 40.69px;
+  height: 40.69px;
+  border-radius: 50%;
+}
+.UstadHero_avatar-group__circle--red__g5jJE {
+  background: #ef4444;
+  top: 12px;
+  left: 5.3px;
+  z-index: 1;
+}
+.UstadHero_avatar-group__circle--orange__VuXcw {
+  background: #fbbf24;
+  top: 19.96px;
+  left: 0;
+}
+.UstadHero_avatar-group__image__KSpXX {
+  position: absolute;
+  width: 38.92px;
+  height: 39.81px;
+  top: 16.42px;
+  left: 3.54px;
+  border-radius: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 2;
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../../node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!../../node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!../../node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!../../node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!../../shared/src/styles/UstadRedefineProductivity.module.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+.UstadRedefineProductivity_redefine__aADuG {
+  padding: 2rem;
+}
+.UstadRedefineProductivity_redefine__content__euAMj {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.UstadRedefineProductivity_redefine__title__gIcLm {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #231b3b;
+  text-align: center;
+}
+.UstadRedefineProductivity_redefine__features__m8R8a {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+.UstadRedefineProductivity_redefine__action__Ckndo {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.UstadRedefineProductivity_feature__CwSE8 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 1.25rem;
+  background: rgba(35, 27, 59, 0.05);
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+.UstadRedefineProductivity_feature__CwSE8:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+.UstadRedefineProductivity_feature__icon__peop_ {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 153, 20, 0.1);
+  border-radius: 100%;
+}
+.UstadRedefineProductivity_feature__title__m8qrd {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #231b3b;
+}
+.UstadRedefineProductivity_feature__description__Aentm {
+  font-size: 1rem;
+  color: rgba(35, 27, 59, 0.7);
+  line-height: 1.5;
+}
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../../node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!../../node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!../../node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!../../node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!../../shared/src/styles/UstadTestimonialCard.module.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+.UstadTestimonialCard_testimonial__EuAQY {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 1.5rem;
+  background: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0px 4px 6px -1px rgba(60, 60, 60, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.UstadTestimonialCard_testimonial__EuAQY:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+.UstadTestimonialCard_testimonial__header__JS_Ve {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.UstadTestimonialCard_testimonial__avatar__uYnJr {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: rgba(35, 27, 59, 0.05);
+}
+.UstadTestimonialCard_testimonial__avatar__uYnJr img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.UstadTestimonialCard_testimonial__info__1geuX {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.UstadTestimonialCard_testimonial__name__9JV2c {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #231b3b;
+}
+.UstadTestimonialCard_testimonial__role__Gc5nt {
+  font-size: 0.875rem;
+  color: rgba(35, 27, 59, 0.7);
+}
+.UstadTestimonialCard_testimonial__content__uuo_j {
+  font-size: 1rem;
+  color: rgba(35, 27, 59, 0.7);
+  line-height: 1.6;
+}
+.UstadTestimonialCard_testimonial__rating__WvZGB {
+  display: flex;
+  gap: 0.5rem;
+  color: #29590f;
+}
+
+.UstadTestimonialCard_quote__title__9oB8F {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+  max-width: 720px;
+}
+.UstadTestimonialCard_quote__text__DHf4i {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  opacity: 0.8;
+  max-width: 840px;
+}
+
+.UstadTestimonialCard_author__info__aEY4A {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.UstadTestimonialCard_author__avatar__nv_dw {
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+.UstadTestimonialCard_author__avatar__nv_dw img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.UstadTestimonialCard_author__details__mJ_E4 {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.UstadTestimonialCard_author__name__wmLLl {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.UstadTestimonialCard_author__role__qX6ce, .UstadTestimonialCard_author__company__ZgKOn {
+  font-size: 0.875rem;
+  opacity: 0.8;
+}
+.UstadTestimonialCard_author__tags__9okOl {
+  display: flex;
+  gap: 8px;
+}
+
+.UstadTestimonialCard_tags__item___q7kv {
+  padding: 4px 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+@media (max-width: 1240px) {
+  .UstadTestimonialCard_testimonial__author__qde9E {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+  .UstadTestimonialCard_testimonial__logos___HJS9 {
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .UstadTestimonialCard_quote__title__9oB8F {
+    font-size: 1.125rem;
+  }
+  .UstadTestimonialCard_quote__text__DHf4i {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 640px) {
+  .UstadTestimonialCard_author__tags__9okOl {
+    flex-wrap: wrap;
+  }
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../../node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!../../node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!../../node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!../../node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!../../shared/src/styles/UstadFeatureCard.module.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+.UstadFeatureCard_header-cta__fLFqM {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.UstadFeatureCard_header-nav__K2Hor {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+}
+
+.UstadFeatureCard_hero-title__yg_FX {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 6rem;
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+}
+
+.UstadFeatureCard_section-title__ruoWu {
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.UstadFeatureCard_description__gC5CT {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.UstadFeatureCard_feature-title__YoD45 {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.44;
+  letter-spacing: -0.02em;
+}
+
+.UstadFeatureCard_yesiLdefter-title__R0kfm {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+}
+
+.UstadFeatureCard_body__9pss2 {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.UstadFeatureCard_typography-cta__Z6__G {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+.UstadFeatureCard_typography-nav__RxzJy {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+}
+.UstadFeatureCard_typography-title-main__OMtDW {
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+.UstadFeatureCard_typography-description-bold___MGQv {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.UstadFeatureCard_features__N1SSw {
+  margin: 1.5rem auto;
+}
+.UstadFeatureCard_features__grid__FXpGj {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.UstadFeatureCard_features__item__3rQhq {
+  display: flex;
+  gap: 1.25rem;
+  padding: 1.25rem;
+  background: rgba(35, 27, 59, 0.05);
+  border-radius: 24px;
+  transition: all 0.3s ease;
+}
+.UstadFeatureCard_features__item__3rQhq:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, rgba(35, 27, 59, 0.05) 0%, rgba(255, 153, 20, 0.1) 100%);
+}
+.UstadFeatureCard_features__item__3rQhq:hover .UstadFeatureCard_item__icon__Rd4XD {
+  background: #29590f;
+}
+.UstadFeatureCard_features__item__3rQhq:hover .UstadFeatureCard_item__icon__Rd4XD img {
+  filter: brightness(0) invert(1);
+}
+
+.UstadFeatureCard_item__icon__Rd4XD {
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 153, 20, 0.1);
+  border-radius: 100%;
+  transition: all 0.3s ease;
+}
+.UstadFeatureCard_item__icon__Rd4XD img {
+  width: 28px;
+  height: 28px;
+  transition: all 0.3s ease;
+}
+.UstadFeatureCard_item__content__HWFeH {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.UstadFeatureCard_item__title__FPWMq {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.44;
+  letter-spacing: -0.02em;
+}
+.UstadFeatureCard_item__description__8bjez {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+@media (max-width: 1240px) {
+  .UstadFeatureCard_features__N1SSw {
+    margin: 1.5rem auto;
+  }
+  .UstadFeatureCard_features__grid__FXpGj {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+  .UstadFeatureCard_features__item__3rQhq {
+    padding: 1.25rem;
+  }
+}
+@media (max-width: 640px) {
+  .UstadFeatureCard_features__N1SSw {
+    margin: 1.25rem auto;
+  }
+  .UstadFeatureCard_features__grid__FXpGj {
+    grid-template-columns: 1fr;
+  }
+  .UstadFeatureCard_features__item__3rQhq {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+  }
+}
+@keyframes UstadFeatureCard_fadeInUp__eK2TC {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.UstadFeatureCard_features__item__3rQhq {
+  opacity: 0;
+  animation: UstadFeatureCard_fadeInUp__eK2TC 0.6s ease forwards;
+}
+.UstadFeatureCard_features__item__3rQhq:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.UstadFeatureCard_features__item__3rQhq:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.UstadFeatureCard_features__item__3rQhq:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.UstadFeatureCard_features__item__3rQhq:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.UstadFeatureCard_features__item__3rQhq:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.UstadFeatureCard_features__item__3rQhq:nth-child(6) {
+  animation-delay: 0.6s;
+}
