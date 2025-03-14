@@ -13,6 +13,7 @@ import { Suspense } from 'react';
 import { UstadHeader } from '../../Header';
 import { UstadFooter } from '../../Footer';
 import { UstadDecorations } from '../../Decoration';
+import { UstadBackground } from '../../Background/';
 
 export interface UstadLayoutProps {
   children: React.ReactNode;

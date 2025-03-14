@@ -3,11 +3,17 @@
 .layout {
   min-height: 100vh;
   overflow: auto;
+  background: $color-background-gradient;
+  z-index: -3;
+  position: relative;
   &__main {
-    position: relative;
+    position: initial;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 0 $spacing-2xl 0;
+    justify-content: flex-start;
+    padding: 0rem;
+    margin: 0rem;
+    transition: all 0.3s ease;
   }
 }

@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+// Font Imports
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:wght@400;700&display=swap');
 
 // Brand Colors
 $color-background-dark: #241b3b; // Dark background
@@ -22,31 +22,27 @@ $color-secondary-beige: #c4cfb3;
 $button-padding-sm: 12px 20px;
 $button-padding-md: 14px 24px;
 $button-padding-lg: 16px 32px;
-$button-radius: 8px;
 $button-font-weight: 500;
 
 $button-border: none;
 
 // Typography
-$font-family-base: 'Fira Sans Extra Condensed', sans-serif; // Using Inter font
-$font-family-secondary: 'Playfair Display', sans-serif;
-$font-family-tertiary: 'Merriweather', serif;
+$font-family-base: 'Overpass', sans-serif;
+$font-family-secondary: 'Bona Nova', serif;
+$font-family-tertiary: 'Roboto Condensed', sans-serif;
 $color-text-light: #fafafa;
-$color-text-dark: #121114;
+$color-text-dark: #121212;
 
 // Border Colors
 $color-border-primary: rgba(#0a0a0a, 0.1);
 $color-border-dark: #0f172a;
 $color-border-light: rgba(255, 255, 255, 0.1);
 
-// Border Radius
-$button-radius-sm: 8px; // Small buttons
-$button-radius-md: 20px; // Medium buttons
-$button-radius-lg: 26px; // Large buttons
-
+// YesilDefter Border Radius
+$border-radius: 16px;
 $border-radius-sm: 12px;
-$border-radius-md: 24px;
-$border-radius-lg: 36px;
+$border-radius-lg: 32px;
+
 // Shadow Colors
 $color-shadow-primary: rgba(60, 60, 60, 0.1); // Card shadows
 $color-shadow-secondary: rgba(189, 183, 164, 1); // Secondary button shadows
@@ -70,6 +66,12 @@ $color-success-dark: #0f766e; // Dark success text
 $color-warning-dark: #b45309; // Dark warning text
 $color-error-dark: #b91c1c; // Dark error text
 $color-info-dark: #1d4ed8; // Dark info text
+
+// YesilDefter Effects
+// Drop Shadow
+$effects-drop-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.21);
+$effects-test-dropshadow: 0px 41px 87px 0px rgba(145, 155, 169, 0.43);
+$effects-border-default: 1px 1px 0px 0px #0a0a0a;
 
 // Shadows
 $shadow-card: 0px 4px 6px -1px $color-shadow-primary;
@@ -111,13 +113,27 @@ $font-size-3xl: 1.875rem; // 30px
 $font-size-4xl: 2.25rem; // 36px
 $font-size-5xl: 3.5rem; // 56px
 $font-size-6xl: 4.5rem; // 72px
-$font-size-hero-title: 6rem;
+
+// UstadTypography Sizes
+$font-size-heading-1: 1rem;
+$font-size-heading-title-serif: 3rem;
+$font-size-cta-title: 1rem;
+$font-size-paragraph: 0.75rem;
 
 // Font Weights
 $font-weight-normal: 400;
 $font-weight-medium: 500;
 $font-weight-semibold: 600;
 $font-weight-bold: 700;
+
+// UstadTypography Weights
+$font-weight-heading-1: 400;
+
+// UstadTypography Line Heights
+$line-height-paragraph: 0.75rem;
+
+// UstadTypography Letter Spacings
+$letter-spacing-heading-title-serif: -0.296rem;
 
 // Layout
 $container-width: 1280px;
@@ -137,7 +153,6 @@ $breakpoint-xl: 1280px;
 $button-padding-sm: 8px 16px;
 $button-padding-md: 12px 24px;
 $button-padding-lg: 16px 32px;
-$button-radius: $radius-lg;
 $button-font-weight: $font-weight-semibold;
 
 // Transitions
@@ -153,15 +168,13 @@ $z-index-tooltip: 1070;
 
 // Spacing
 $spacing-none: 0;
-$spacing-xxs: 0.25rem; // 4px
-$spacing-xs: 0.5rem; // 8px
-$spacing-sm: 0.75rem; // 12px
+$spacing-xs: 0.25rem; // 4px
+$spacing-sm: 0.5rem; // 8px
 $spacing-md: 1rem; // 16px
-$spacing-lg: 1.25rem; // 20px
-$spacing-xl: 1.5rem; // 24px
-$spacing-2xl: 2rem; // 32px
-$spacing-3xl: 2.5rem; // 40px
-$spacing-4xl: 3rem; // 48px
+$spacing-lg: 2rem; // 20px
+$spacing-xl: 3rem; // 48px
+$spacing-2xl: 4rem;
+$spacing-4xl: 8rem;
 
 // Component Spacing
 $spacing-button-gap: $spacing-xs; // 8px gap between button elements
@@ -172,6 +185,17 @@ $spacing-section-gap: $spacing-2xl; // 32px gap between sections
 $color-primary: #29590f;
 $color-primary-orange: #ff9914;
 $color-primary-dark: #231b3b;
+
+// YesilDefter Colors
+$color-palette-1: #57467b;
+$color-palette-2: #5ab1bb;
+$color-palette-3: #295c00;
+$color-primary-light: #fff;
+$color-background-gradient: linear-gradient(
+  180deg,
+  #e0eadf 24.5%,
+  #eff2ef 64.5%
+);
 
 // Text Colors
 $color-text-primary: $color-primary-dark;
@@ -205,7 +229,7 @@ $line-height-normal: 1.5;
 $line-height-relaxed: 1.75;
 
 // Letter spacings
-$letter-spacing-tight: -0.04em;
+$letter-spacing-tight: -0.072em;
 
 // Remove duplicate color definitions and keep only one set
 $color-primary-green: #29590f;

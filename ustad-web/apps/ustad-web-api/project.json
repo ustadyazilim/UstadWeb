@@ -1,0 +1,33 @@
+{
+  "name": "ustad-web-api",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/ustad-web-api",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:node",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/ustad-web-api",
+        "main": "apps/ustad-web-api/cmd/main.go",
+        "tsConfig": "apps/ustad-web-api/tsconfig.json",
+        "assets": ["apps/ustad-web-api/assets"]
+      },
+      "configurations": {
+        "production": {
+          "optimization": true,
+          "extractLicenses": true,
+          "inspect": false
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nx/js:node",
+      "options": {
+        "buildTarget": "ustad-web-api:build",
+        "port": 8080
+      }
+    }
+  },
+  "tags": []
+}

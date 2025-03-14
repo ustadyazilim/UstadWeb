@@ -1,44 +1,65 @@
 {
-  "counter": {
-    "decrement": "Decrement",
-    "increment": "Increment"
-  },
   "home": {
-    "welcome": "YesiLdefter",
-    "heroTitle": "Road to a Driver's License Made Easy",
-    "heroSubtitle": "Join thousands of satisfied users who have simplified their licensing process.",
-    "ctaStart": "Get Started",
-    "trafficSignSection": {
-      "title": "It's Easy to Get Your Driver's License",
-      "description": "YesilDefter makes it easy to get your driver's license. Our app helps you navigate the process and get your license in no time."
-    },
-    "licenceJourneySection": {
-      "title": "Your Journey to License",
-      "description": "Step by step guide to getting your driver's license with interactive videos and much more."
-    },
-    "navItems": {
-      "Item 1": "Home",
-      "Item 2": "About",
-      "Item 3": "Contact",
-      "Item 4": "Blog",
-      "Item 5": "FAQ"
-    },
-    "testimonials": {
-      "title": "What Our Users Say",
-      "testimonial1": "YesilDefter made my application process so easy!",
-      "testimonial2": "I got my license without any hassle, thanks to this app."
-    },
-    "faq": {
-      "title": "Frequently Asked Questions",
-      "question1": "How do I start my application?",
-      "answer1": "Click on 'Get Started for Free' and follow the instructions.",
-      "question2": "What documents do I need?",
-      "answer2": "You will need your ID and proof of residence."
-    },
+    "test": "test",
     "hero": {
-      "header": {
-        "label": "Remember"
-      }
+      "title": "yesildefter",
+      "subtitle": "Your Road to a Driver’s License—Simplified",
+      "cta": "Join the Leading Platform for Driving Schools & Get Licensed Faster",
+      "description": "Join thousands of successful driving schools that have streamlined their licensing process with YesilDefter."
+    },
+    "trafficSignSection": {
+      "title": "It's Easy to Get Your Driver's Licence",
+      "descriptionTexts": [
+        "YesilDefter, isletmelerin yönetim süreçlerini kolaylaştıran ve hızlandıran bir platform sunar.",
+        "Isletmenizi modernleştirin, musterilerinizin  ve personelinizin güvenini her zaman koruyun.",
+        "Teknolojik çözümlerle işlerinizi daha hızlı ve doğru yapın, aynı zamanda eskiye dayanan güvenilirlik ve profesyonellik anlayışından ödün vermeyin."
+      ],
+      "descriptionIcons": ["fa-hand-holding-heart", "fa-shield", "fa-upload"]
+    },
+    "integrationTitle": "Our Integration Solutions",
+    "integrationSolutions": [
+      "E-Invoice",
+      "Virtual POS",
+      "SMS Notifications",
+      "Remote Access",
+      "Unlimited Users",
+      "Secure Backup",
+      "Manage your finances seamlessly",
+      "Secure and fast transactions",
+      "Automated messaging for efficiency",
+      "Manage operations anytime, anywhere",
+      "Scale without limits",
+      "Protect your data with cloud storage"
+    ],
+    "integrationCta": "Discover Documentation",
+    "whyYesilDefter": {
+      "title": "The easiest way to manage your driving school business.",
+      "benefits": [
+        "Efficient & Time-Saving – Automate and simplify administrative tasks",
+        "Trusted by Professionals – Used by top driving schools",
+        "Seamless Licensing Process – From registration to certification"
+      ]
     }
-  }
+  },
+  "footer": {
+    "ustad": "© 2024 Ustad. All Rights Reserved."
+  },
+  "dictionary": [
+    "Driving Schools",
+    "License Exams",
+    "Driving Lessons",
+    "Traffic Rules",
+    "Exam Dates",
+    "License Fees",
+    "FAQs",
+    "Contact",
+    "About Us",
+    "Blog",
+    "Careers",
+    "Privacy Policy",
+    "Terms of Service",
+    "GDPR Compliance",
+    "Cookie Policy",
+    "Help Center"
+  ]
 }

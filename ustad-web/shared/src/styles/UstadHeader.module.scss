@@ -1,124 +1,127 @@
-@use './UstadDesignTokens' as tokens;
+@use './UstadDesignTokens.scss' as tokens;
 @use './UstadTypography' as typography;
-
 .header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
-  z-index: tokens.$z-index-fixed;
-  height: tokens.$header-height;
-  padding: tokens.$header-padding;
-  background: transparent;
-
+  z-index: 3;
+  padding: tokens.$spacing-lg;
+  &__cta {
+    width: initial;
+    height: initial;
+    margin-left: 1.5rem;
+    display: flex;
+    padding: 1.25rem 1.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: tokens.$border-radius-sm;
+    box-shadow: tokens.$effects-border-default;
+    .contact-button {
+      width: initial;
+      height: initial;
+      @include typography.cta-title;
+      background-color: tokens.$color-primary;
+      border: 1px solid tokens.$color-text-dark;
+      padding: 0.75rem 1.5rem;
+      &:hover {
+        background-color: darken(tokens.$color-primary, 5%);
+      }
+    }
+  }
   &__container {
-    max-width: tokens.$container-width;
-    width: 100%;
-    margin: 0 auto;
+    width: initial;
+    height: 6.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: tokens.$spacing-lg;
+    border-radius: tokens.$border-radius;
+    background: rgba(245, 247, 249, 0.5);
+    backdrop-filter: blur(10px);
+    box-shadow: tokens.$effects-test-dropshadow;
+  }
+  &__logo-wrapper {
     display: flex;
     align-items: center;
-    justify-content: space-between;
   }
-
   &__logo {
-    font-size: tokens.$font-size-xl;
-    font-weight: tokens.$font-weight-bold;
-    color: tokens.$color-text-light;
+    color: tokens.$color-primary-light;
     text-decoration: none;
   }
-
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: tokens.$spacing-xs;
+    padding-right: tokens.$spacing-xs;
+  }
   &__nav {
     display: flex;
     align-items: center;
-    margin-left: auto; // Push nav items to the right
-    gap: tokens.$nav-item-gap;
-
-    .nav__item {
-      color: tokens.$nav-text-color;
-      font-weight: tokens.$nav-font-weight;
-      font-size: tokens.$nav-font-size;
-      text-decoration: none;
-      transition: tokens.$transition-base;
-      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-      border-radius: 8px;
-      padding: 12px 16px;
-
-      &:hover {
-        color: tokens.$nav-hover-color;
-      }
+    gap: tokens.$spacing-md;
+    padding-left: tokens.$spacing-lg;
+    padding-right: tokens.$spacing-lg;
+  }
+  .nav__item {
+    @include typography.heading-1;
+    color: tokens.$color-primary-light;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    box-shadow: tokens.$effects-drop-shadow;
+    &:hover {
+      color: tokens.$color-primary-light;
     }
   }
-
-  &__actions {
+  .nav__exit-button {
+    @include typography.heading-1;
     display: flex;
     align-items: center;
-    gap: tokens.$spacing-md;
-    margin-left: tokens.$spacing-xl; // Space between nav and actions
-
-    .avatar {
-      width: tokens.$avatar-size;
-      height: tokens.$avatar-size;
-      border-radius: tokens.$avatar-border-radius;
-      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-      overflow: hidden;
-      cursor: pointer;
-      transition: tokens.$transition-base;
-
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-
-      &:hover {
-        transform: scale(1.05);
-      }
+    gap: 0.3rem;
+    color: #fff;
+    cursor: pointer;
+    .exit-icon {
+      font-size: 1rem;
+    }
+  }
+  .nav__user-icon {
+    margin-left: 1.5rem;
+    width: 1.875rem;
+    height: 1.875rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .user-icon {
+      font-size: 1.25rem;
+      color: #fff;
     }
   }
 }
-
-// Responsive styles
 @media (max-width: tokens.$breakpoint-tablet) {
   .header {
     padding: tokens.$spacing-md tokens.$spacing-lg;
-
     &__container {
       padding: 0;
       justify-content: space-between;
     }
-
     &__nav {
       display: none;
     }
-
     &__actions {
       .get-started,
       .exit-button {
         display: none;
       }
     }
-
     .header__mobile {
       display: block;
       /* Add styles for mobile menu icon if needed */
     }
-  }
-}
-
-.footer {
-  background-color: #070606; // Footer background color
-  color: #c4c4c4; // Footer text color
-  padding: 40px 0; // Adjust padding
-  text-align: center; // Center text
-}
-
-.footer__text {
-  font-size: 14px; // Adjust font size
-  margin-bottom: 12px; // Adjust spacing
-}
-
-.nav {
-  &__item {
-    @include typography.text-nav;
   }
 }

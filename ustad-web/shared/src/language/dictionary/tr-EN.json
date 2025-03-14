@@ -1,9 +1,0 @@
-{
-  "counter": {
-    "decrement": "Decrement",
-    "increment": "Increment"
-  },
-  "home": {
-    "welcome": "Welcome test 4"
-  }
-}

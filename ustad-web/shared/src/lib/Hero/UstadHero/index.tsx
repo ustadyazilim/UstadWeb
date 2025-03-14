@@ -1,11 +1,8 @@
-'use client';
-
 /** Core Imports */
-import { Suspense } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 import { getDictionary } from '../../../language/get-dictionary';
-import dynamic from 'next/dynamic';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlay } from '@fortawesome/free-solid-svg-icons';
 
 /** Type Imports */
 import type { Locale } from '../../../language/i18n-config';
@@ -14,6 +11,7 @@ import type { Locale } from '../../../language/i18n-config';
 import styles from '../../../styles/UstadHero.module.scss';
 import UstadButton from '../../Button/UstadButton';
 
+/** Props Interface */
 export interface UstadHeroProps {
   params: {
     lang: Locale;
@@ -21,68 +19,43 @@ export interface UstadHeroProps {
   };
 }
 
-// Dynamically import the ThreeScene component with no SSR
-const ThreeScene = dynamic(
-  () => import('./ThreeScene').then((mod) => mod.default),
-  {
-    ssr: false,
-    loading: () => (
-      <div className={styles['hero__header']}>
-        <span className={styles['hero__header--label']}>
-          It's Easy to Get Your Driver's License
-        </span>
-        <h1 className={styles['hero__header--title']}>yesiLdefter</h1>
-      </div>
-    ),
-  }
-);
-
-const UstadHero = ({ params }: UstadHeroProps) => {
+const UstadHero = async ({ params }: UstadHeroProps) => {
+  // Variables && Hooks
   const { lang } = params;
-
+  const dictionary = await getDictionary(lang);
   return (
     <div className={styles['hero']}>
       <div className={styles['hero__container']}>
         <div className={styles['hero__content']}>
-          <div
-            className={styles['hero__3d-container']}
-            style={{ height: '300px' }}
-          >
-            <ThreeScene />
-          </div>
-
-          <UstadButton variant="cta" className={styles['hero__cta']}>
-            Get started & Join the trusted community of Driver Schools
-          </UstadButton>
-
-          <div className={styles['hero__users']}>
-            <p className={styles['hero__users--text']}>
-              Join thousands of successful drivers who got their license through
-              our platform
-            </p>
-            <div className={styles['hero__users--avatars']}>
-              {[1, 2, 3, 4].map((index) => (
-                <div key={index} className={styles['avatar-group']}>
-                  <div
-                    className={`${styles['avatar-group__circle']} ${styles['avatar-group__circle--red']}`}
-                  />
-                  <div
-                    className={`${styles['avatar-group__circle']} ${styles['avatar-group__circle--orange']}`}
-                  />
-                  <img
-                    src={`/images/avatars/avatar${index}.png`}
-                    alt={`User ${index}`}
-                    className={styles['avatar-group__image']}
-                  />
-                </div>
-              ))}
+          <div className={styles['hero__header']}>
+            <h5 className={styles['hero__header--label']}>
+              {dictionary?.home?.hero?.subtitle}
+            </h5>
+            <div className={styles['hero__header--logo']}>
+              <Image
+                src={`/images/logos/logo-hero.png`}
+                width={420}
+                height={120}
+                alt={`yesildefter Logo`}
+                className={styles['logo-hero']}
+              />
             </div>
           </div>
+          <UstadButton
+            variant="cta"
+            className={styles['hero__cta']}
+            size="large"
+            icon={<FontAwesomeIcon icon={faPlay} />}
+            iconPosition="right"
+          >
+            {dictionary?.home?.hero?.cta}
+          </UstadButton>
         </div>
-
         <div className={styles['hero__image_wrapper']}>
-          <img
+          <Image
             src="/images/illustrations/hero-illustration.svg"
+            width={50}
+            height={50}
             alt="Hero illustration"
             className={styles['hero__image']}
           />

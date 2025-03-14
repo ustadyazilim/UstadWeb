@@ -10,14 +10,15 @@ import {
 
 /** NOTE(@Janberk): Home page */
 export default async function Page() {
+  const lang = 'tr-TR';
   return (
     <>
       <UstadBackground animated />
       <main className="main-content" style={{ paddingTop: '160px' }}>
-        <UstadHero params={{ lang: 'en-US', theme: 'light' }} />
-        <UstadTrafficSignSection params={{ lang: 'en-US', theme: 'light' }} />
-        <UstadIntegrationSolutions params={{ lang: 'en-US', theme: 'light' }} />
-        <UstadWhyYesildefter params={{ lang: 'en-US', theme: 'light' }} />
+        <UstadHero params={{ lang: lang, theme: 'light' }} />
+        <UstadTrafficSignSection params={{ lang: lang, theme: 'light' }} />
+        <UstadIntegrationSolutions params={{ lang: lang, theme: 'light' }} />
+        <UstadWhyYesildefter params={{ lang: lang, theme: 'light' }} />
       </main>
     </>
   );

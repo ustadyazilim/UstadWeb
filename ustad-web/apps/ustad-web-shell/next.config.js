@@ -18,6 +18,10 @@ const nextConfig = {
         source: '/esinav/:path*',
         destination: 'http://localhost:3003/:path*',
       },
+      {
+        source: '/api/auth/:path*',
+        destination: 'http://localhost:8080/api/auth/:path*',
+      },
     ];
   },
 };

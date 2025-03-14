@@ -1,25 +1,33 @@
 @use './UstadDesignTokens' as tokens;
+@use './UstadTypography' as typography;
 
 .section {
   width: 100%;
   max-width: 1000px;
-  padding: 180px 0px;
+  padding: tokens.$spacing-xl;
   margin: auto;
   &__container {
     display: flex;
     align-items: center;
+    width: 100%;
   }
   &__signs {
     flex: 1;
-    position: relative;
+    display: flex;
+    width: calc(420px - 6rem);
+    height: 100%;
+    padding: tokens.$spacing-md;
+    gap: tokens.$spacing-sm;
+    align-items: center;
+    justify-content: center;
   }
   .signs__group {
     display: flex;
-    gap: tokens.$spacing-xl;
+    gap: tokens.$spacing-md;
   }
   .signs__item {
     position: relative;
-    height: 240px;
+    height: 160px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,8 +35,8 @@
     &::before {
       content: '';
       position: absolute;
-      width: 120px;
-      height: 120px;
+      width: 60px;
+      height: 60px;
       border-radius: 50%;
       z-index: 0;
       transition: transform 0.3s ease;
@@ -63,21 +71,44 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: tokens.$spacing-2xl;
+    gap: tokens.$spacing-md;
   }
   &__title {
-    font-size: tokens.$font-size-4xl;
-    font-weight: tokens.$font-weight-bold;
-    letter-spacing: tokens.$letter-spacing-tight;
-    color: tokens.$color-text-primary;
-    font-family: tokens.$font-family-secondary;
+    @include typography.heading-title-serif;
+    color: tokens.$color-text-dark;
   }
   &__description {
-    font-size: tokens.$font-size-lg;
-    color: tokens.$color-text-secondary;
-    line-height: tokens.$line-height-tight;
-    letter-spacing: tokens.$letter-spacing-tight;
-    font-family: tokens.$font-family-tertiary;
+    @include typography.paragraph;
+    color: tokens.$color-text-dark;
+    padding: tokens.$spacing-sm;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+
+    &__title {
+      font-weight: 400;
+    }
+
+    &__icon {
+      width: 3rem;
+      padding: tokens.$spacing-sm;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &__1 {
+        color: tokens.$color-palette-1;
+      }
+
+      &__2 {
+        color: tokens.$color-palette-2;
+      }
+
+      &__3 {
+        color: tokens.$color-palette-3;
+      }
+    }
   }
 }
 

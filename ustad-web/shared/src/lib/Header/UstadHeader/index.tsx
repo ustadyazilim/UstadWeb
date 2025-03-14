@@ -6,12 +6,15 @@ import type { Locale } from '../../../language/i18n-config';
 /** Core Imports */
 import Link from 'next/link';
 import { useState } from 'react';
+import Image from 'next/image';
 
 /** Style Imports */
 import styles from '../../../styles/UstadHeader.module.scss';
 
 /** Component Imports */
 import UstadButton from '../../Button/UstadButton';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser, faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
 
 /** Props Interface */
 export interface UstadHeaderProps {
@@ -26,16 +29,12 @@ const NAV_ITEMS = [
   { label: 'Home', href: '/' },
   { label: 'About', href: '/about' },
   { label: 'Documentation', href: '/documentation' },
-  { label: 'Subscriptions', href: '/subscription' },
-  { label: 'Announcements', href: '/announcements' },
-  { label: 'Education', href: '/education' },
-  { label: 'Buy Credit', href: '/buy-credit' },
-  { label: 'ESinav', href: '/esinav' },
+  { label: 'Purchase', href: '/subscription' },
 ];
 
 const UstadHeader = ({ className, params }: UstadHeaderProps) => {
   // TODO: Replace with actual auth state management
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState(true);
 
   const handleLogout = () => {
     setIsAuthenticated(false);
@@ -45,50 +44,56 @@ const UstadHeader = ({ className, params }: UstadHeaderProps) => {
   return (
     <header className={`${styles['header']} ${className || ''}`}>
       <div className={styles['header__container']}>
-        <Link href="/" className={styles['header__logo']}>
-          yesiLdefter
-        </Link>
+        <div className={styles['header__logo-wrapper']}>
+          <Link href="/" className={styles['header__logo']}>
+            <Image
+              src="/images/logo-2x.png"
+              alt="yeşiLdefter"
+              width={214}
+              height={52}
+            />
+          </Link>
+        </div>
 
-        <nav className={styles['header__nav']}>
-          {NAV_ITEMS.map((item, index) => (
-            <Link key={index} href={item.href} className={styles['nav__item']}>
-              {item.label}
-            </Link>
-          ))}
-        </nav>
-
-        <div className={styles['header__actions']}>
-          {isAuthenticated ? (
-            <>
-              <div className={styles['avatar']}>
-                <img src="/images/avatar.png" alt="Profile" />
-              </div>
-              <UstadButton
-                variant="text"
-                icon={
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M17 7L15.59 8.41L18.17 11H8V13H18.17L15.59 15.58L17 17L22 12L17 7ZM4 5H12V3H4C2.9 3 2 3.9 2 5V19C2 20.1 2.9 21 4 21H12V19H4V5Z"
-                      fill="currentColor"
-                    />
-                  </svg>
-                }
-                iconPosition="right"
-                onClick={handleLogout}
+        <div className={styles['header__content']}>
+          <nav className={styles['header__nav']}>
+            {NAV_ITEMS.map((item, index) => (
+              <Link
+                key={index}
+                href={item.href}
+                className={styles['nav__item']}
               >
-                Exit
+                {item.label}
+              </Link>
+            ))}
+
+            {isAuthenticated && (
+              <div className={styles['nav__exit-button']}>
+                <FontAwesomeIcon
+                  icon={faSignOutAlt}
+                  className={styles['exit-icon']}
+                />
+                <span>Exit</span>
+              </div>
+            )}
+
+            {isAuthenticated && (
+              <div className={styles['nav__user-icon']}>
+                <FontAwesomeIcon
+                  icon={faUser}
+                  className={styles['user-icon']}
+                />
+                <span>Login</span>
+              </div>
+            )}
+          </nav>
+
+          {isAuthenticated && (
+            <div className={styles['header__cta']}>
+              <UstadButton variant="cta" className={styles['contact-button']}>
+                Contact Us
               </UstadButton>
-            </>
-          ) : (
-            <Link href="/auth/login">
-              <UstadButton variant="cta">Get Started</UstadButton>
-            </Link>
+            </div>
           )}
         </div>
       </div>
