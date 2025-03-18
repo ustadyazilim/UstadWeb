@@ -16,8 +16,10 @@ func Connect() (*gorm.DB, error) {
 	user := getEnv("DB_USER", "postgres")
 	password := getEnv("DB_PASSWORD", "postgres")
 	dbname := getEnv("DB_NAME", "ustad-web")
-	dsn := fmt.Sprintf("host=%s port=%s user=%s password=%s dbname=%s sslmode=disable",
-		host, port, user, password, dbname)
+	sslmode := getEnv("DB_SSLMODE", "disable")
+	
+	dsn := fmt.Sprintf("host=%s port=%s user=%s password=%s dbname=%s sslmode=%s",
+		host, port, user, password, dbname, sslmode)
 
 	db, err := gorm.Open(postgres.Open(dsn), &gorm.Config{})
 	if err != nil {

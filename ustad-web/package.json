@@ -46,7 +46,8 @@
     "three-custom-shader-material": "*",
     "tslib": "^2.8.1",
     "util": "^0.12.5",
-    "zone.js": "~0.14.2"
+    "zone.js": "~0.14.2",
+    "dotenv": "^16.0.3"
   },
   "devDependencies": {
     "@babel/core": "^7.22.20",
