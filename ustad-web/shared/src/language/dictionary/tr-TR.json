@@ -1,0 +1,56 @@
+{
+  "home": {
+    "hero": {
+      "title": "yesildefter",
+      "subtitle": "Ehliyet Almanın En Kolay Yolu",
+      "cta": "Lider Sürücü Kursu Platformuna Katılın & Süreci Hızlandırın",
+      "description": "Binlerce sürücü kursu, YesilDefter ile lisanslama sürecini kolaylaştırdı. Siz de katılın!"
+    },
+    "trafficSignSection": {
+      "title": "Hızlı ve Etkili Çözümler",
+      "descriptionTexts": [
+        "YesilDefter, isletmelerin yönetim süreçlerini kolaylaştıran ve hızlandıran bir platform sunar.",
+        "Isletmenizi modernleştirin, musterilerinizin  ve personelinizin güvenini her zaman koruyun.",
+        "Teknolojik çözümlerle işlerinizi daha hızlı ve doğru yapın, aynı zamanda eskiye dayanan güvenilirlik ve profesyonellik anlayışından ödün vermeyin."
+      ],
+      "descriptionIcons": ["fa-hand-holding-heart", "fa-shield", "fa-upload"]
+    },
+    "integrationSolutions": [
+      "E-Fatura – Finans süreçlerinizi dijitalleştirin ve kolay yönetin",
+      "Sanal POS – Güvenli ve hızlı ödeme çözümleri ile tahsilatınızı kolaylaştırın",
+      "SMS Bildirimleri – Müşterilerinize otomatik bilgilendirme mesajları gönderin",
+      "Uzaktan Erişim – İşletmenizi internet bağlantısı olan her yerden yönetin",
+      "Sınırsız Kullanıcı – Ekip üyelerinizi sınır olmadan sisteme dahil edin",
+      "Güvenli Yedekleme – Verilerinizi her zaman güvende tutan bulut çözümleri"
+    ],
+    "whyYesilDefter": {
+      "title": "Sürücü Kursunuzu Yönetmenin En Kolay ve Güvenilir Yolu",
+      "benefits": [
+        "Zamandan ve İş Gücünden Tasarruf Edin – Süreçleri otomatikleştirerek işlerinizi hızlandırın",
+        "Güvenilir ve Profesyonel Çözümler – Türkiye’nin önde gelen sürücü kurslarının tercihi",
+        "Sorunsuz Ehliyet Alma Süreci – Kayıttan sınava, ehliyetten sertifikaya kadar her aşamada yanınızdayız"
+      ]
+    }
+  },
+  "footer": {
+    "ustad": "© 2024 Ustad. Tüm Hakları Saklıdır."
+  },
+  "dictionary": [
+    "Sürücü Kursları",
+    "Ehliyet Sınavları",
+    "Direksiyon Dersleri",
+    "Trafik Kuralları",
+    "Sınav Tarihleri",
+    "Ehliyet Ücretleri",
+    "Sıkça Sorulan Sorular",
+    "İletişim",
+    "Hakkımızda",
+    "Blog",
+    "Kariyer",
+    "Gizlilik Politikası",
+    "Kullanım Koşulları",
+    "KVKK",
+    "Çerez Politikası",
+    "Yardım Merkezi"
+  ]
+}

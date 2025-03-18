@@ -2,30 +2,32 @@
 @use './UstadTypography' as typography;
 
 .hero {
-  width: 1000px;
+  width: fit-content;
   margin: auto;
-  background: rgba(255, 255, 255, 0.5); // Semi-transparent white background
-  border-radius: tokens.$border-radius-lg; // Rounded corners
-  padding: tokens.$spacing-sm;
+  height: 509px;
+  background: rgba(245, 247, 249, 0.5);
+  border-radius: 16px;
   position: relative;
   z-index: 1;
 
+  box-shadow: 0px 41px 87px 0px rgba(145, 158, 171, 0.43);
+
   &__container {
     height: 100%;
-    max-width: '1442px';
+    width: fit-content;
     display: flex;
-    gap: tokens.$spacing-lg;
     align-items: center;
-    padding: tokens.$spacing-md;
+    justify-content: center;
   }
 
   &__content {
-    flex: 1;
     height: 100%;
     padding: tokens.$spacing-md;
-    display: flex;
     flex-direction: column;
-    gap: tokens.$spacing-xl;
+    gap: tokens.$spacing-md;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   &__3d-container {
@@ -39,52 +41,38 @@
   }
 
   &__header {
+    @include typography.heading-1;
     position: relative;
     display: flex;
     flex-direction: column-reverse;
     gap: 0;
-    padding: 2rem;
+    padding: 1rem;
     pointer-events: none;
     user-select: none;
 
     &--label {
-      font-size: 1rem;
-      line-height: 1.5;
-      color: #666;
+      color: tokens.$color-text-dark;
       position: relative;
-      bottom: 24px;
-      left: 36px;
+      top: calc(-1 * 1.48rem);
+      left: 7.72rem;
+      font-weight: 400;
     }
 
-    &--title {
-      font-size: 3rem;
-      line-height: 1.2;
-      font-weight: bold;
-      color: #333;
-    }
-  }
-
-  &__users {
-    display: flex;
-    flex-direction: column;
-    gap: tokens.$spacing-lg;
-    border-radius: 24px;
-
-    &--text {
-      @include typography.text-body;
-      color: tokens.$color-text-secondary;
-    }
-
-    &--avatars {
+    &--logo {
       display: flex;
+      justify-content: center;
       align-items: center;
-      padding: 0;
+      padding: 0rem;
+      margin: 0rem;
+      border-radius: 16px;
+      object-fit: cover;
+      z-index: 2;
     }
   }
 
-  &__image-wrapper {
+  &__image_wrapper {
     position: relative;
-    width: 1440px;
+    width: initial;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -101,46 +89,8 @@
     object-fit: contain;
   }
 
-  &__description {
-    @include typography.text-body;
-    color: tokens.$color-text-secondary;
-  }
-}
-
-.avatar-group {
-  position: relative;
-  width: 46px;
-  height: 48.65px;
-  margin-right: tokens.$spacing-md;
-
-  &__circle {
-    position: absolute;
-    width: 40.69px;
-    height: 40.69px;
-    border-radius: 50%;
-
-    &--red {
-      background: tokens.$color-error;
-      top: 12px;
-      left: 5.3px;
-      z-index: 1;
-    }
-
-    &--orange {
-      background: tokens.$color-warning;
-      top: 19.96px;
-      left: 0;
-    }
-  }
-
-  &__image {
-    position: absolute;
-    width: 38.92px;
-    height: 39.81px;
-    top: 16.42px;
-    left: 3.54px;
-    border-radius: 100px;
-    object-fit: cover;
-    z-index: 2;
+  &__cta {
+    @include typography.cta-title;
+    text-align: left;
   }
 }

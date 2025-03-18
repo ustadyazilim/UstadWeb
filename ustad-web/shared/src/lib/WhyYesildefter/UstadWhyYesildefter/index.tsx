@@ -1,3 +1,6 @@
+/** Core Imports */
+import { getDictionary } from '../../../language/get-dictionary';
+
 /** Type Imports */
 import type { Locale } from '../../../language/i18n-config';
 
@@ -21,7 +24,15 @@ export const USTAD_WHY_YESILDEFTER_TEST = {
   DESCRIPTION: 'ustad-why-yesildefter-description',
 };
 
-const UstadWhyYesildefter = ({ className }: UstadWhyYesildefterProps) => {
+const UstadWhyYesildefter = async ({
+  className,
+  params,
+}: UstadWhyYesildefterProps) => {
+  const { lang } = params;
+  const dictionary = await getDictionary(lang);
+
+  const title = lang === 'en-us' ? 'Why' : 'Neden';
+
   return (
     <section
       className={`${styles['why']} ${className || ''}`}
@@ -35,20 +46,15 @@ const UstadWhyYesildefter = ({ className }: UstadWhyYesildefterProps) => {
           className={styles['why__title']}
           data-testid={USTAD_WHY_YESILDEFTER_TEST.TITLE}
         >
-          Neden <span className={styles['why__highlight']}>yesiLdefter</span> ?
+          {title} <span className={styles['why__highlight']}>yesiLdefter</span>{' '}
+          ?
         </h2>
         <div
           className={styles['why__description']}
           data-testid={USTAD_WHY_YESILDEFTER_TEST.DESCRIPTION}
         >
-          <p>İşletmenizi yönetmenin en kolay ve basit yolu.</p>
-          <p>
-            Artık işletmenizdeki işlerinizi hızlı, verimli ve her yerden
-            yönetebilirsiniz.
-          </p>
-          <p>
-            Güvenilir ve etkili çözümlerimizle süreci daha kolay hale getirin.
-          </p>
+          <h5>{dictionary?.home?.whyYesilDefter?.title}</h5>
+          <h5> {dictionary?.home?.whyYesilDefter?.benefits} </h5>
         </div>
       </div>
     </section>

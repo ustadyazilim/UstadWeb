@@ -22,11 +22,35 @@ $font-family-tertiary: tokens.$font-family-tertiary;
   letter-spacing: -0.02em;
 }
 
-@mixin text-hero-title {
+@mixin heading-1 {
   font-family: $font-family-base;
-  font-weight: tokens.$font-weight-bold;
-  font-size: tokens.$font-size-hero-title;
+  font-weight: tokens.$font-weight-heading-1;
+  font-size: tokens.$font-size-heading-1;
   line-height: tokens.$line-height-tight;
+  letter-spacing: tokens.$letter-spacing-tight;
+}
+
+@mixin heading-title-serif {
+  font-family: $font-family-secondary;
+  font-weight: tokens.$font-weight-bold;
+  font-size: tokens.$font-size-heading-title-serif;
+  line-height: tokens.$line-height-tight;
+  letter-spacing: tokens.$letter-spacing-heading-title-serif;
+}
+
+@mixin cta-title {
+  font-family: $font-family-tertiary;
+  font-weight: tokens.$font-weight-bold;
+  font-size: tokens.$font-size-cta-title;
+  line-height: tokens.$line-height-tight;
+  letter-spacing: tokens.$letter-spacing-tight;
+}
+
+@mixin paragraph {
+  font-family: $font-family-base;
+  font-weight: 400;
+  font-size: tokens.$font-size-paragraph;
+  line-height: tokens.$line-height-paragraph;
   letter-spacing: tokens.$letter-spacing-tight;
 }
 
@@ -79,8 +103,20 @@ $font-family-tertiary: tokens.$font-family-tertiary;
   @include text-nav;
 }
 
-.hero-title {
-  @include text-hero-title;
+.heading-1 {
+  @include heading-1;
+}
+
+.heading-title-serif {
+  @include heading-title-serif;
+}
+
+.cta-title {
+  @include cta-title;
+}
+
+.paragraph {
+  @include paragraph;
 }
 
 .section-title {

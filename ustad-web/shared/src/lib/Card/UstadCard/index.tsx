@@ -30,7 +30,7 @@ const UstadCard = ({
   const [activeTab, setActiveTab] = useState(0);
   return (
     <div
-      className={`${styles['card']} ${styles[`card--${variant}`]} ${
+      className={`${styles.card} ${styles[`card--${variant}`]} ${
         className || ''
       }`}
       data-testid={USTAD_CARD_TEST.CONTAINER}
