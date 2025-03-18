@@ -21,6 +21,22 @@ export interface UstadHeroProps {
   };
 }
 
+// Dynamically import the ThreeScene component with no SSR
+const ThreeScene = dynamic(
+  () => import('./ThreeScene').then((mod) => mod.default),
+  {
+    ssr: false,
+    loading: () => (
+      <div className={styles['hero__header']}>
+        <span className={styles['hero__header--label']}>
+          It's Easy to Get Your Driver's License
+        </span>
+        <h1 className={styles['hero__header--title']}>yesiLdefter</h1>
+      </div>
+    ),
+  }
+);
+
 const UstadHero = ({ params }: UstadHeroProps) => {
   const { lang } = params;
 
