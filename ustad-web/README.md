@@ -17,6 +17,11 @@ This monorepo contains multiple web applications built with Nx, including Nextjs
 
 ## Getting Started
 
+## Database Setup
+
+1. Create a PostgreSQL database using a cloud provider (Supabase, ElephantSQL, etc.)
+2. Create a `.env` file in the root of the project with the following variables:
+
 ### 1. Clone the Repository
 
 ```bash

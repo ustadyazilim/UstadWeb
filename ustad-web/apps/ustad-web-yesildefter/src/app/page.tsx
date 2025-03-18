@@ -13,7 +13,7 @@ export default async function Page() {
   const lang = 'tr-TR';
   return (
     <>
-      <UstadBackground animated />
+      <UstadBackground animated variant={'figma'} />
       <main className="main-content" style={{ paddingTop: '160px' }}>
         <UstadHero params={{ lang: lang, theme: 'light' }} />
         <UstadTrafficSignSection params={{ lang: lang, theme: 'light' }} />

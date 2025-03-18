@@ -10,7 +10,7 @@
     "start:chatbot": "cd apps/ustad-web-chatbot && ([ -d \"venv\" ] || (python -m venv venv && source venv/bin/activate && ([ -f \"requirements.txt\" ] || echo \"flask==3.0.2\\nflask-cors==4.0.0\\npython-dotenv==1.0.1\" > requirements.txt))) && source venv/bin/activate && pip install -r requirements.txt && ./start-flask.sh",
     "start:api": "cd apps/ustad-web-api && go run cmd/main.go",
     "build:api": "cd apps/ustad-web-api && go build -o ../../dist/apps/ustad-web-api/api ./cmd",
-    "serve:all": "NODE_ENV=development NX_DAEMON=false npx nx run-many --target=serve --projects=ustad-web-esinav,ustad-web-yesildefter,ustad-web-shell --parallel=true --maxParallel=3 --verbose & npm run start:api",
+    "serve:all": "NODE_ENV=development NX_DAEMON=false NX_NO_PTY=true npx nx run-many --target=serve --projects=ustad-web-esinav,ustad-web-yesildefter,ustad-web-shell --parallel=true --maxParallel=3 --verbose & npm run start:api",
     "setup": "npm run clean && npm run install:deps && npm run install:nx && npm run install:apps && npm run serve:all"
   },
   "private": true,
@@ -44,7 +44,8 @@
     "remark-gfm": "^4.0.0",
     "three": "^0.173.0",
     "util": "^0.12.5",
-    "zone.js": "~0.14.2"
+    "zone.js": "~0.14.2",
+    "dotenv": "^16.0.3"
   },
   "devDependencies": {
     "@babel/core": "^7.22.20",

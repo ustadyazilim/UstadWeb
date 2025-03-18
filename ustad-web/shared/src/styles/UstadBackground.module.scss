@@ -31,10 +31,8 @@
 
   .background__shape {
     position: absolute;
-    filter: blur(120px);
+    filter: tokens.$blur-xl;
     transition: transform 0.6s ease;
-    width: 174.109px;
-    height: 190.665px;
 
     &:hover {
       transform: scale(1.05);
@@ -55,27 +53,28 @@
     }
 
     &--orange {
-      width: 27.8785rem;
-      height: 9.82794rem;
+      width: 16rem;
+      height: auto;
       background-color: tokens.$color-primary-orange;
       transform: rotate(-125deg);
       position: absolute;
-      right: 9.17188rem;
-      bottom: 66.45581rem;
+      top: 48rem;
+      right: -72rem;
     }
 
     &--purple {
       background-color: tokens.$color-palette-1;
-      width: 10.88181rem;
-      height: 11.91656rem;
       position: absolute;
-      right: 0.46306rem;
-      bottom: 17.29263rem;
+      bottom: -80rem;
+      right: -64rem;
+      width: 12rem;
+      height: 12rem;
+      filter: tokens.$blur-md;
     }
 
     &--beige {
-      background: url('/images/illustrations/test-background-2.png') lightgray
-          50% / cover no-repeat,
+      background: url('/images/illustrations/testBackground2.png') lightgray 50% /
+          cover no-repeat,
         rgba(196, 207, 195, 0.96);
       background-blend-mode: overlay, normal;
       border-radius: 50%;
@@ -88,21 +87,22 @@
     }
 
     &--blue {
-      top: 765px;
-      left: 1214px;
       background-color: tokens.$color-palette-2;
-      width: 14.97219rem;
-      height: 12.44925rem;
+      right: -48rem;
+      width: 36rem;
+      height: 12rem;
+      filter: tokens.$blur-md;
     }
 
     &--red {
-      top: 2585px;
-      left: 172px;
       background-color: #f21b3f;
-      width: 11.64425rem;
-      height: 10.38738rem;
       transform: rotate(74.762deg);
       position: absolute;
+      left: -76rem;
+      bottom: -100rem;
+      height: 6rem;
+      width: 12rem;
+      filter: tokens.$blur-md;
     }
   }
 }
@@ -124,12 +124,12 @@
     &--1 {
       top: -32vh;
       left: 5vw;
-      filter: blur(80px);
+      filter: tokens.$blur-xl;
     }
     &--2 {
       top: 64vh;
       left: 48vw;
-      filter: blur(80px);
+      filter: tokens.$blur-xl;
     }
     &--3 {
       top: 228vh;
